@@ -1,5 +1,5 @@
 # ANT Robotics
-A landing page for [AntRobotics.tech] (https://antrobotics.tech/)  
+A landing page for [AntRobotics.tech](https://antrobotics.tech/)  
 
 ## Technology Used
 * JavaScript (ES6)
@@ -8,6 +8,6 @@ A landing page for [AntRobotics.tech] (https://antrobotics.tech/)
 
 ## Team
 
-* [Marina Manelis] (https://github.com/Av1sa)
-* [Denis Pankov] (https://github.com/idenispankov)
+* [Marina Manelis](https://github.com/Av1sa)
+* [Denis Pankov](https://github.com/idenispankov)
 
