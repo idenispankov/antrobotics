@@ -6,11 +6,25 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Ant Robotics</title>
   </head>
-  <body>
-    <header>
-      <!-- <p class="content-title">Bla</p> -->
-    </header>
-    <main></main>
+  <body class="page">
+    <header></header>
+    <main>
+      <!-- Benefits -->
+      <section class="section benefits">
+        <h2 class="content-title">Benefits</h2>
+        <ul class="benefits__container"></ul>
+      </section>
+    </main>
+
+    <!-- Benefits Item Template -->
+    <template id="benefit-template">
+      <li>
+        <img class="benefits__image" />
+        <h3 class="item-title benefits__item-title"></h3>
+        <p class="item-description"></p>
+      </li>
+    </template>
+
     <script src="config.js"></script>
     <script src="./pages/index.js"></script>
   </body>
