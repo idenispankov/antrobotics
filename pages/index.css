@@ -9,7 +9,4 @@
 @import url('../blocks/benefits/benefits.css');
 @import url('../blocks/team/team.css');
 
-* {
-  border: solid 1px red;
-}
 
