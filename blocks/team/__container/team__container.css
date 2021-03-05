@@ -1,0 +1,9 @@
+.team__container {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 34px;
+  grid-row-gap: 34px;
+  margin: 90px 0 0 0;
+  padding: 0;
+}

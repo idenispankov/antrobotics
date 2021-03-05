@@ -14,13 +14,28 @@
         <h2 class="content-title">Benefits</h2>
         <ul class="benefits__container"></ul>
       </section>
+      <!-- Team -->
+      <section class="section team">
+        <h2 class="content-title">Team</h2>
+        <ul class="team__container"></ul>
+      </section>
     </main>
 
     <!-- Benefits Item Template -->
-    <template id="benefit-template">
+    <template id="benefits-template">
       <li>
         <img class="benefits__image" />
         <h3 class="item-title benefits__item-title"></h3>
+        <p class="item-description"></p>
+      </li>
+    </template>
+
+    <!-- Team Item Template -->
+    <template id="team-template">
+      <li class="team__item">
+        <img class="team__image" />
+        <h3 class="item-title team__item-title"></h3>
+        <h4 class="team__position"></h4>
         <p class="item-description"></p>
       </li>
     </template>
