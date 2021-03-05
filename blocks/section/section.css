@@ -1,0 +1,14 @@
+.section {
+  border-radius: 14px;
+  background-color: #f9f9f9;
+  padding: 110px 100px;
+  margin-bottom: 10px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section_theme_dark {
+  background: #242424;
+}
