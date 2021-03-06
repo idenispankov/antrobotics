@@ -1,0 +1,9 @@
+.content-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.content-text_theme_light {
+  color: #525252;
+}
