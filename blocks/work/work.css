@@ -1,0 +1,9 @@
+@import url('./__button/work__button.css');
+@import url('./__title/work__title.css');
+
+.work {
+  padding: 19px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
