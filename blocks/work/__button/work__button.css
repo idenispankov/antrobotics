@@ -8,4 +8,10 @@
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.work__button:hover {
+  cursor: pointer;
 }
