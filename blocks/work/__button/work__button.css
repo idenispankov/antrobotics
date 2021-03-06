@@ -1,0 +1,17 @@
+.work__button {
+  width: 160px;
+  height: 42px;
+  background: #FAA805;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.work__button:hover {
+  cursor: pointer;
+}
