@@ -1,0 +1,9 @@
+.benefits__container {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin: 70px 0 0 0;
+  padding: 0;
+}

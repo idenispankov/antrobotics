@@ -59,25 +59,25 @@ var data = {
     {
       image: "./assets/benefits/topnotch.png",
       title: "Top-Notch Technology",
-      desciption:
+      description:
         "Once you transform your indoor logistics, we'll keep it up-to-date.",
     },
     {
       image: "./assets/benefits/uptodate.png",
       title: "Up-To-Date Software",
-      desciption:
+      description:
         "You always get immediate software updates including new features and algorithms in background.",
     },
     {
       image: "./assets/benefits/seamless.png",
       title: "Seamless Fleet Upgrade",
-      desciption:
+      description:
         "No need to stop the production to upgrade, extend, or replace the fleet. No hassle needed for the new units to get to work.",
     },
     {
       image: "./assets/benefits/incompatible.png",
       title: "Incompatible Robots Team-Up",
-      desciption:
+      description:
         "Robots produced by tens of different vendors can collaborate in the same workspace.",
     },
   ],
