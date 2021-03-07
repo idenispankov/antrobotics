@@ -57,25 +57,25 @@ let data = {
   ],
   benefits: [
     {
-      image: "./assets/benefits/topnotch.png",
+      image: "./assets/benefits/topnotch.svg",
       title: "Top-Notch Technology",
       description:
         "Once you transform your indoor logistics, we'll keep it up-to-date.",
     },
     {
-      image: "./assets/benefits/uptodate.png",
+      image: "./assets/benefits/uptodate.svg",
       title: "Up-To-Date Software",
       description:
         "You always get immediate software updates including new features and algorithms in background.",
     },
     {
-      image: "./assets/benefits/seamless.png",
+      image: "./assets/benefits/seamless.svg",
       title: "Seamless Fleet Upgrade",
       description:
         "No need to stop the production to upgrade, extend, or replace the fleet. No hassle needed for the new units to get to work.",
     },
     {
-      image: "./assets/benefits/incompatible.png",
+      image: "./assets/benefits/incompatible.svg",
       title: "Incompatible Robots Team-Up",
       description:
         "Robots produced by tens of different vendors can collaborate in the same workspace.",
