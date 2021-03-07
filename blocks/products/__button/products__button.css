@@ -1,0 +1,16 @@
+.products__button {
+  width: 99px;
+  height: 26px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 16px;
+  background: #000000;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.products__button:hover{
+  cursor: pointer;
+}

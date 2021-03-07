@@ -1,0 +1,18 @@
+@import url('./__check-mark/products__check-mark.css');
+@import url('./__list-item/products__list-item.css');
+@import url('./__list/products__list.css');
+@import url('./__description/products__description.css');
+@import url('./__text-container/products__text-container.css');
+@import url('./__gallery-container/products__gallery-container.css');
+@import url('./__button/products__button.css');
+@import url('./__image-container/products__image-container.css');
+@import url('./__item-description-container/products__item-description-container.css');
+
+.products {
+  display: flex;
+}
+
+
+
+
+

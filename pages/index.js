@@ -38,13 +38,41 @@ function populateGalleryItem(item) {
     item.description;
 }
 
+function populateProductsItem(item) {
+  document.querySelector(
+    ".products__image-container"
+  ).style.background = `url(${item.image}) center/cover no-repeat`;
+  document.querySelector(".products").querySelector(".item-title").textContent =
+    item.name;
+  document.querySelector(
+    "#max-payload"
+  ).textContent = `Max payload: ${item.features.max_payload}`;
+  document.querySelector("#size").textContent = `Size: ${item.features.size}`;
+  document.querySelector(
+    "#max-speed"
+  ).textContent = `Max speed: ${item.features.max_speed}`;
+  document.querySelector(
+    "#running-time"
+  ).textContent = `Running time: ${item.features.running_time}`;
+  document.querySelector(
+    "#charging-time"
+  ).textContent = `Charging time: ${item.features.charging_time}`;
+}
+
 const galleryCarousel = new Carousel({
   data: data.gallery,
-  btnBackClass: "gallery__button_type_back",
-  btnForwardClass: "gallery__button_type_forward",
+  btnBackClass: "gallery__button-back",
+  btnForwardClass: "gallery__button-forward",
   populateItem: populateGalleryItem,
+});
+const productsCarousel = new Carousel({
+  data: data.products,
+  btnBackClass: "products__button-back",
+  btnForwardClass: "products__button-forward",
+  populateItem: populateProductsItem,
 });
 
 galleryCarousel.generateCarousel();
+productsCarousel.generateCarousel();
 addBenefits();
 addTeam();
