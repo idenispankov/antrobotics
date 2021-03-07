@@ -1,3 +1,5 @@
+import Carousel from "../components/Carousel.js";
+
 function addBenefits() {
   const benefitsContainer = document.querySelector(".benefits__container");
   const benefitsElementTemplate = document.querySelector("#benefits-template")
@@ -28,5 +30,21 @@ function addTeam() {
   });
 }
 
+function populateGalleryItem(item) {
+  document.querySelector(
+    ".gallery__image-container"
+  ).style.background = `url(${item.image}) center/cover no-repeat`;
+  document.querySelector(".gallery__slide-description").textContent =
+    item.description;
+}
+
+const galleryCarousel = new Carousel({
+  data: data.gallery,
+  btnBackClass: "gallery__button_type_back",
+  btnForwardClass: "gallery__button_type_forward",
+  populateItem: populateGalleryItem,
+});
+
+galleryCarousel.generateCarousel();
 addBenefits();
 addTeam();
