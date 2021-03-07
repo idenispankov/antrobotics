@@ -1,8 +1,16 @@
 .item-description {
   font-weight: normal;
   font-size: 10px;
-  line-height: 16px;
+  line-height: 15px;
   color: #525252;
   margin: 0;
   padding: 0;
 }
+
+.item-description#max-payload {
+  margin: 22px 0 0 0;
+}
+.item-description#charging-time {
+  margin: 0 0 56px 0;
+}
+

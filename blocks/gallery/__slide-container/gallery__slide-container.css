@@ -1,0 +1,5 @@
+.gallery__slide-container {
+  display: flex;
+  align-items: center;
+  margin: 50px 0 14px;
+}

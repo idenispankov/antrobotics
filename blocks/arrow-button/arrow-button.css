@@ -1,0 +1,30 @@
+.arrow-button {
+  width: 52px;
+  height: 52px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow-button:hover {
+  cursor: pointer;
+}
+
+.arrow-button_type_back {
+  background: url('../../../../images/arrow_left.svg') no-repeat center;
+}
+
+.arrow-button_type_back:disabled {
+  background: url('../../../images/arrow_left_grey.svg') no-repeat center;
+}
+
+.arrow-button_type_forward {
+  background: url('../../../../images/arrow_right.svg') no-repeat center;
+}
+
+.arrow-button_type_forward:disabled {
+  background: url('../../../../images/arrow_right_grey.svg') no-repeat center;
+}

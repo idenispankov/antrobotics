@@ -3,8 +3,4 @@
 @import url('./__item-title/team__item-title.css');
 @import url('./__item/team__item.css');
 @import url('./__position/team__position.css');
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
