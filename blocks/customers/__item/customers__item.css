@@ -1,0 +1,8 @@
+@import url("./-title/customers__item-title.css");
+
+.customers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
