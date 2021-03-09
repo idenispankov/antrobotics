@@ -1,0 +1,10 @@
+@import url("./-item/contact__list-item.css");
+@import url("./-item_bold/contact__list-item_bold.css");
+@import url("./-email/contact__list-email.css");
+
+.contact__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 50px;
+}
