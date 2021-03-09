@@ -6,7 +6,9 @@ function addBenefits() {
     .content;
   data.benefits.map((item) => {
     const benefitsItem = benefitsElementTemplate.cloneNode(true);
-    benefitsItem.querySelector(".benefits__image-container").style.background = `url(${item.image}) center no-repeat`;
+    benefitsItem.querySelector(
+      ".benefits__image-container"
+    ).style.background = `url(${item.image}) center no-repeat`;
     benefitsItem.querySelector(".item-title").textContent = item.title;
     benefitsItem.querySelector(".item-description").textContent =
       item.description;

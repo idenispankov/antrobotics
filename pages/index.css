@@ -1,16 +1,68 @@
-@import url('../vendor/normalize.css');
-@import url('../vendor/fonts/fonts.css');
-@import url('../blocks/page/page.css');
-@import url('../blocks/section/section.css');
-@import url('../blocks/item-title/item-title.css');
-@import url('../blocks/item-description/item-description.css');
-@import url('../blocks/content-title/content-title.css');
-@import url('../blocks/content-text/content-text.css');
-@import url('../blocks/benefits/benefits.css');
-@import url('../blocks/team/team.css');
-@import url('../blocks/work/work.css');
-@import url('../blocks/gallery/gallery.css');
-@import url('../blocks/products/products.css');
-@import url('../blocks/arrow-button/arrow-button.css');
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
+@import url("../blocks/page/page.css");
+@import url("../blocks/section/section.css");
+@import url("../blocks/item-title/item-title.css");
+@import url("../blocks/item-description/item-description.css");
+@import url("../blocks/content-title/content-title.css");
+@import url("../blocks/content-text/content-text.css");
+@import url("../blocks/benefits/benefits.css");
+@import url("../blocks/team/team.css");
+@import url("../blocks/work/work.css");
+@import url("../blocks/gallery/gallery.css");
+@import url("../blocks/products/products.css");
+@import url("../blocks/arrow-button/arrow-button.css");
 
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
 
+.contact__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+}
+
+.contact__text-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+.contact__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 50px; */
+}
+
+.item-title-light {
+  font-weight: 400;
+}
+
+.contact__link {
+  color: #000;
+}
+
+.contact__list-item {
+  margin-bottom: 12px;
+}
+
+/* #googleMap {
+  border: 1px solid red;
+} */
+
+/* .contact__list-item:last-of-type {
+  margin-bottom: 206px;
+} */
+
+.contact__footer {
+  margin: 0;
+}
