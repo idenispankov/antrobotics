@@ -1,16 +1,17 @@
-@import url('../vendor/normalize.css');
-@import url('../vendor/fonts/fonts.css');
-@import url('../blocks/page/page.css');
-@import url('../blocks/section/section.css');
-@import url('../blocks/item-title/item-title.css');
-@import url('../blocks/item-description/item-description.css');
-@import url('../blocks/content-title/content-title.css');
-@import url('../blocks/content-text/content-text.css');
-@import url('../blocks/benefits/benefits.css');
-@import url('../blocks/team/team.css');
-@import url('../blocks/work/work.css');
-@import url('../blocks/gallery/gallery.css');
-@import url('../blocks/products/products.css');
-@import url('../blocks/arrow-button/arrow-button.css');
-
-
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
+@import url("../blocks/html/html.css");
+@import url("../blocks/page/page.css");
+@import url("../blocks/header/header.css");
+@import url("../blocks/navbar/navbar.css");
+@import url("../blocks/section/section.css");
+@import url("../blocks/item-title/item-title.css");
+@import url("../blocks/item-description/item-description.css");
+@import url("../blocks/content-title/content-title.css");
+@import url("../blocks/content-text/content-text.css");
+@import url("../blocks/benefits/benefits.css");
+@import url("../blocks/team/team.css");
+@import url("../blocks/work/work.css");
+@import url("../blocks/gallery/gallery.css");
+@import url("../blocks/products/products.css");
+@import url("../blocks/arrow-button/arrow-button.css");

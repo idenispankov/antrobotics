@@ -1,0 +1,10 @@
+.header {
+  box-sizing: border-box;
+  background-color: #242424;
+  /* Temporary height */
+  min-height: 634px;
+  padding: 20px 100px 0;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 14px;
+}

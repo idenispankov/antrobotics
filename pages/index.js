@@ -1,18 +1,56 @@
 import Carousel from "../components/Carousel.js";
 
+// Navbar Scrolling Style Change
+const navBar = document.querySelector(".navbar");
+const navBarLogo = document.querySelector(".navbar__logo");
+const navBarSocial = document.querySelector(".navbar__social");
+const navBarListItems = document.querySelectorAll(".navbar__list-item");
+const sectionOne = document.querySelector(".header");
+
+const sectionOneOptions = {
+  rootMargin: "-75px 0px 0px 0px",
+};
+
+const sectionOneObserver = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navBar.classList.add("navbar-scrolled");
+      navBarLogo.classList.add("navbar-scrolled");
+      navBarSocial.classList.add("navbar-scrolled");
+      navBarListItems.forEach((item) => {
+        item.classList.add("navbar-scrolled");
+      });
+    } else {
+      navBar.classList.remove("navbar-scrolled");
+      navBarLogo.classList.remove("navbar-scrolled");
+      navBarSocial.classList.remove("navbar-scrolled");
+      navBarListItems.forEach((item) => {
+        item.classList.remove("navbar-scrolled");
+      });
+    }
+  });
+}, sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+
+// Add Benefits
 function addBenefits() {
   const benefitsContainer = document.querySelector(".benefits__container");
   const benefitsElementTemplate = document.querySelector("#benefits-template")
     .content;
   data.benefits.map((item) => {
     const benefitsItem = benefitsElementTemplate.cloneNode(true);
-    benefitsItem.querySelector(".benefits__image-container").style.background = `url(${item.image}) center no-repeat`;
+    benefitsItem.querySelector(
+      ".benefits__image-container"
+    ).style.background = `url(${item.image}) center no-repeat`;
     benefitsItem.querySelector(".item-title").textContent = item.title;
     benefitsItem.querySelector(".item-description").textContent =
       item.description;
     benefitsContainer.append(benefitsItem);
   });
 }
+
+// Add Team
 function addTeam() {
   const teamContainer = document.querySelector(".team__container");
   const teamElementTemplate = document.querySelector("#team-template").content;
@@ -28,6 +66,7 @@ function addTeam() {
   });
 }
 
+// Gallery Items
 function populateGalleryItem(item) {
   document.querySelector(
     ".gallery__image-container"
@@ -57,6 +96,7 @@ function populateProductsItem(item) {
   ).textContent = `Charging time: ${item.features.charging_time}`;
 }
 
+// Gallery Carousel
 const galleryCarousel = new Carousel({
   data: data.gallery,
   btnBackClass: "gallery__button-back",

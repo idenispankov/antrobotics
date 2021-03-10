@@ -1,0 +1,20 @@
+@import url("./__logo/navbar__logo.css");
+@import url("./__list/navbar__list.css");
+@import url("./__social/navbar__social.css");
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 1060px;
+  align-items: center;
+}
+
+.navbar-scrolled {
+  color: #000;
+  background-color: #efefef;
+  border-radius: 6px;
+}
