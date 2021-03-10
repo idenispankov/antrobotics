@@ -6,4 +6,9 @@
   font-size: 20px;
   line-height: 14px;
   padding: 17px 20px 17px 0;
+  transition: opacity 0.3s linear;
+}
+
+.navbar__social:hover {
+  opacity: 0.7;
 }
