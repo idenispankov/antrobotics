@@ -11,6 +11,8 @@
   position: fixed;
   width: 1060px;
   align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .navbar-scrolled {
