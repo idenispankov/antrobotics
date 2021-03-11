@@ -74,7 +74,7 @@ const productsCarousel = new Carousel({
 
 // Popup
 const popup = document.querySelector(".popup");
-const inputs = document.querySelectorAll(".form__input");
+const inputs = document.querySelectorAll(".popup__form-input");
 const formButton = document.querySelector(".work__button");
 
 function openPopup() {
@@ -101,6 +101,7 @@ formButton.addEventListener("click", openPopup);
 document.addEventListener("click", closePopup);
 document.addEventListener("keyup", escClosePopup);
 
+// Functions Call
 galleryCarousel.generateCarousel();
 productsCarousel.generateCarousel();
 addBenefits();

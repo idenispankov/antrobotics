@@ -79,7 +79,7 @@
 
   <!-- Popup Contact Form -->
   <div class="popup">
-    <form action="#" class="popup__form">
+    <form action="#" method="POST" enctype="text/plain" class="popup__form">
       <h3 class="popup__form-title">Write us</h3>
 
       <label class="popup__form-label" for="name">Name</label>
@@ -91,7 +91,7 @@
       <label class="popup__form-label" for="message">Message</label>
       <textarea class="popup__form-input popup__form-textarea" name="message" id="message"></textarea>
 
-      <button class="popup__form-submit" type="submit">Submit</button>
+      <button disabled class="popup__form-submit" type="submit">Submit</button>
       <button class="popup__form-close" aria-label="Close button" type="reset"></button>
     </form>
   </div>
