@@ -4,6 +4,7 @@
 @import url("./__email/contact__list-email.css");
 @import url("./__footer/contact__footer.css");
 @import url("./__map/contact__map.css");
+@import url("./__link/contact__link.css");
 
 .contact {
   display: flex;
