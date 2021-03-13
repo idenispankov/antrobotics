@@ -1,31 +1,4 @@
 let data = {
-  customers: [
-    {
-      title: "Labor-intensive dolly movements",
-      description:
-        "Challenges: It is more and more difficult to hire workers, because they prefer to work in delivery services for the same money.",
-      image: "./assets/customers/labor-intensive.jpg",
-    },
-    {
-      title: "Forklifts, tuggers managed by man",
-      description:
-        "Challenges: It is more and more difficult to hire forklift drivers  because they prefer to work in delivery for the same money.",
-      image: "./assets/customers/forklifts.jpg",
-    },
-    {
-      title: "Follow-the-line robots",
-      description:
-        "Challenges: It is time-consuming and expensive to replace old robots by state-of-the art, but produced by another vendor.",
-      image: "./assets/customers/follow-the-line.jpg",
-    },
-    {
-      title: "Autonomous mobile robots ",
-      description:
-        "Challenges: Limited upgrade options within the same vendor robot line only and too expensive to use another vendor robots.",
-      image: "./assets/customers/autonomous.jpg",
-    },
-  ],
-
   team: [
     {
       name: "Max Antonenko",

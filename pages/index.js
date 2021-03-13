@@ -17,23 +17,6 @@ function addBenefits() {
   });
 }
 
-// Customers
-function addCustomers() {
-  const customersContainer = document.querySelector(".customers__container");
-  const customersElementTemplate = document.querySelector("#customers-template")
-    .content;
-  data.customers.map((item) => {
-    const customersItem = customersElementTemplate.cloneNode(true);
-    const img = customersItem.querySelector(".customers__image");
-    img.src = item.image;
-    img.alt = item.title;
-    customersItem.querySelector(".item-title").textContent = item.title;
-    customersItem.querySelector(".item-description").textContent =
-      item.description;
-    customersContainer.append(customersItem);
-  });
-}
-
 // Team
 function addTeam() {
   const teamContainer = document.querySelector(".team__container");
