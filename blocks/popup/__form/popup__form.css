@@ -1,9 +1,9 @@
-@import url("./-title/popup__form-title.css");
-@import url("./-label/popup__form-label.css");
-@import url("./-input/popup__form-input.css");
-@import url("./-textarea/popup__form-textarea.css");
-@import url("./-sumbit/popup__form-submit.css");
-@import url("./-close/popup__form-close.css");
+@import url("./__form-title/popup__form-title.css");
+@import url("./__form-label/popup__form-label.css");
+@import url("./__form-input/popup__form-input.css");
+@import url("./__form-textarea/popup__form-textarea.css");
+@import url("./__form-sumbit/popup__form-submit.css");
+@import url("./__form-close/popup__form-close.css");
 
 .popup__form {
   width: 384px;
