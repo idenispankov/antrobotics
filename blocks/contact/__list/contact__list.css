@@ -1,8 +1,3 @@
-@import url("./-item/contact__list-item.css");
-@import url("./-item_bold/contact__list-item_bold.css");
-@import url("./-email/contact__list-email.css");
-@import url("./-link/contact__list-link.css");
-
 .contact__list {
   padding: 0;
   margin: 0;

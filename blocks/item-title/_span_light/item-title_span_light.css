@@ -1,12 +1,8 @@
-.contact__list-item {
+.item__title_span_light {
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19.36px;
+  line-height: 19px;
   letter-spacing: -0.04em;
   color: #000;
-}
-
-.contact__list-item:last-child {
-  margin: 0;
 }
