@@ -9,10 +9,10 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
-  width: 1060px;
+  min-width: 1060px;
   align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding: 17px 20px;
+  box-sizing: border-box;
 }
 
 .navbar-scrolled {
