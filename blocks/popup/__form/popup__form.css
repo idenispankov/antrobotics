@@ -1,0 +1,17 @@
+@import url("./__form-title/popup__form-title.css");
+@import url("./__form-label/popup__form-label.css");
+@import url("./__form-input/popup__form-input.css");
+@import url("./__form-textarea/popup__form-textarea.css");
+@import url("./__form-sumbit/popup__form-submit.css");
+@import url("./__form-close/popup__form-close.css");
+
+.popup__form {
+  width: 384px;
+  box-sizing: border-box;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

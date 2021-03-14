@@ -1,0 +1,5 @@
+.popup__form-textarea {
+  min-height: 100px;
+  resize: none;
+  margin-bottom: 30px;
+}

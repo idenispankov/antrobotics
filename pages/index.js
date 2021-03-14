@@ -113,6 +113,36 @@ const productsCarousel = new Carousel({
   populateItem: populateProductsItem,
 });
 
+// Popup
+const popup = document.querySelector(".popup");
+const inputs = document.querySelectorAll(".popup__form-input");
+const formButton = document.querySelector(".work__button");
+
+function openPopup() {
+  popup.classList.add("popup-open");
+  inputs.forEach((input) => (input.value = ""));
+}
+
+function closePopup(e) {
+  if (
+    e.target.classList.contains("popup__form-close") ||
+    e.target.classList.contains("popup")
+  ) {
+    popup.classList.remove("popup-open");
+  }
+}
+
+function escClosePopup(e) {
+  if (e.key === "Escape") {
+    popup.classList.remove("popup-open");
+  }
+}
+
+formButton.addEventListener("click", openPopup);
+document.addEventListener("click", closePopup);
+document.addEventListener("keyup", escClosePopup);
+
+// Functions Call
 galleryCarousel.generateCarousel();
 productsCarousel.generateCarousel();
 addBenefits();

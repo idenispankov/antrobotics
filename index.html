@@ -162,6 +162,25 @@
 
   </main>
 
+<!-- Popup Contact Form -->
+  <div class="popup">
+    <form action="#" method="POST" enctype="text/plain" class="popup__form">
+      <h3 class="popup__form-title">Write us</h3>
+
+      <label class="popup__form-label" for="name">Name</label>
+      <input id="name" type="text" class="popup__form-input" name="name" minlength="2" maxlength="40">
+
+      <label class="popup__form-label" for="email">Email*</label>
+      <input id="email" type="email" class="popup__form-input" name="email" minlength="2" maxlength="200" required>
+
+      <label class="popup__form-label" for="message">Message</label>
+      <textarea class="popup__form-input popup__form-textarea" name="message" id="message"></textarea>
+
+      <button disabled class="popup__form-submit" type="submit">Submit</button>
+      <button class="popup__form-close" aria-label="Close button" type="reset"></button>
+    </form>
+  </div>
+
   <!-- Benefits Item Template -->
   <template id="benefits-template">
     <li>
