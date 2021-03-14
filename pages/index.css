@@ -1,5 +1,9 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
+@import url("../blocks/html/html.css");
+@import url("../blocks/page/page.css");
+@import url("../blocks/header/header.css");
+@import url("../blocks/navbar/navbar.css");
 @import url("../blocks/page/page.css");
 @import url("../blocks/section/section.css");
 @import url("../blocks/item-title/item-title.css");
@@ -13,3 +17,5 @@
 @import url("../blocks/products/products.css");
 @import url("../blocks/arrow-button/arrow-button.css");
 @import url("../blocks/popup/popup.css");
+@import url("../blocks/contact/contact.css");
+@import url("../blocks/customers/customers.css");

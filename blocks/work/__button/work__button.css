@@ -1,17 +1,19 @@
 .work__button {
   width: 160px;
   height: 42px;
-  background: #FAA805;
+  background: #faa805;
   border-radius: 6px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   outline: none;
+  transition: opacity 0.3s linear;
 }
 
 .work__button:hover {
+  opacity: 0.7;
   cursor: pointer;
 }
