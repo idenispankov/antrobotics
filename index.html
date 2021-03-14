@@ -107,6 +107,61 @@
       <button class="work__button">Click here!</button>
     </section>
   </main>
+
+
+    <section class="section contact">
+      <div class="contact__container">
+        <div class="contact__header">
+
+          <h2 class="content-title">Contacts</h2>
+
+          <ul class="contact__list">
+
+            <li class="item-title_span_light contact__title">
+              <span class="item-title">
+                Address:
+              </span>
+              8000 Edgewater Dr., Oakland,
+              CA 94621, USA
+            </li>
+
+            <li class="item-title_span_light contact__title">
+              <span class="item-title">
+                Phone:
+              </span>
+              +1 (650) 209-0-269
+            </li>
+
+            <li class="item-title_span_light contact__title">
+              <a class="contact__list-email" href="mailto:info@robotics.tech">
+                <span class="item-title">
+                  Mail:
+                </span>
+                info@antrobotics.tech
+              </a>
+            </li>
+
+            <li class="item-title_span_light contact__title">
+              <a class="item-title contact__link" href="https://www.linkedin.com/company/antrobotics/" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <p class="contact__footer">© ANT Robotics, 2020.</p>
+      </div>
+
+      <!-- https://console.cloud.google.com/ To get an Api Key, then on google maps, get location, embed code option, copy and paste below, change width and height as needed -->
+      <iframe class="contact__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.1066972327435!2d-122.2033151484011!3d37.74064102179507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f85bee5c2f57b%3A0x115b0ab943d303e6!2s8000%20Edgewater%20Dr%2C%20Oakland%2C%20CA%2094621!5e0!3m2!1sen!2sus!4v1615246515812!5m2!1sen!2sus"
+        allowfullscreen="true" loading="lazy">
+      </iframe>
+
+    </section>
+
+  </main>
+
   <!-- Benefits Item Template -->
   <template id="benefits-template">
     <li>
@@ -115,6 +170,7 @@
       <p class="item-description"></p>
     </li>
   </template>
+
   <!-- Team Item Template -->
   <template id="team-template">
     <li class="team__item">
@@ -125,6 +181,9 @@
     </li>
   </template>
   <script src="config.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    async></script>
   <script type="module" src="./components/Carousel.js"></script>
   <script type="module" src="./pages/index.js"></script>
 </body>

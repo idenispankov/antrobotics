@@ -66,7 +66,7 @@ function addTeam() {
   });
 }
 
-// Gallery Items
+// Gallery item
 function populateGalleryItem(item) {
   document.querySelector(
     ".gallery__image-container"
@@ -75,6 +75,7 @@ function populateGalleryItem(item) {
     item.description;
 }
 
+// Products Item
 function populateProductsItem(item) {
   document.querySelector(
     ".products__image-container"
@@ -103,6 +104,8 @@ const galleryCarousel = new Carousel({
   btnForwardClass: "gallery__button-forward",
   populateItem: populateGalleryItem,
 });
+
+// Products Carousel
 const productsCarousel = new Carousel({
   data: data.products,
   btnBackClass: "products__button-back",
@@ -114,3 +117,4 @@ galleryCarousel.generateCarousel();
 productsCarousel.generateCarousel();
 addBenefits();
 addTeam();
+addCustomers();
