@@ -9,11 +9,42 @@
   <title>Ant Robotics</title>
 </head>
 
-<body class="page">
-  <header></header>
+<body id="home" class="page">
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="navbar__logo">ANT Robotics</a>
+      <ul class="navbar__list">
+        <li>
+          <a class="navbar__list-item" href="#robots">Robots</a>
+        </li>
+
+        <li>
+          <a class="navbar__list-item" href="#benefits">Benefits</a>
+        </li>
+
+        <li>
+          <a class="navbar__list-item" href="#gallery">Gallery</a>
+        </li>
+
+        <li>
+          <a class="navbar__list-item" href="#work">Will it work for Me?</a>
+        </li>
+
+        <li>
+          <a class="navbar__list-item" href="#team">Team</a>
+        </li>
+
+        <li>
+          <a class="navbar__list-item" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+      <a class="navbar__social" href="https://www.linkedin.com/company/antrobotics/" target="_blank">in</a>
+    </nav>
+  </header>
   <main>
     <!-- Products -->
-    <section class="section products">
+    <!-- We may add <main> tag to wrap all sections and keep header as is fro main page? -->
+    <section id="robots" class="section products">
       <div class="products__text-container">
         <h2 class="content-title">Wide choice of transport robots</h2>
         <p class="content-text products__description">
@@ -35,7 +66,6 @@
           </li>
         </ul>
       </div>
-
       <div class="products__gallery-container">
         <button class="products__button-back arrow-button arrow-button_type_back"></button>
         <div class="products__image-container"></div>
@@ -52,12 +82,12 @@
       </div>
     </section>
     <!-- Benefits -->
-    <section class="section benefits">
+    <section id="benefits" class="section benefits">
       <h2 class="content-title">Benefits</h2>
       <ul class="benefits__container"></ul>
     </section>
     <!-- Gallery -->
-    <section class="section section_content_centered gallery">
+    <section id="gallery" class="section section_content_centered gallery">
       <h2 class="content-title">Gallery</h2>
       <div class="gallery__slide-container">
         <button class="gallery__button-back arrow-button arrow-button_type_back"></button>
@@ -67,15 +97,17 @@
       <h3 class="content-text gallery__slide-description">Description</h3>
     </section>
     <!-- Team -->
-    <section class="section section_content_centered team">
+    <section id="team" class="section section_content_centered team">
       <h2 class="content-title">Team</h2>
       <ul class="team__container"></ul>
     </section>
     <!-- Work with us -->
-    <section class="section work">
+    <section id="work" class="section work">
       <h2 class="work__title">Want to work with Us?</h2>
       <button class="work__button">Click here!</button>
     </section>
+  </main>
+
 
     <section class="section contact">
       <div class="contact__container">
@@ -149,6 +181,7 @@
     </li>
   </template>
   <script src="config.js"></script>
+
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
     async></script>
   <script type="module" src="./components/Carousel.js"></script>
