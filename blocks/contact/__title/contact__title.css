@@ -1,0 +1,7 @@
+.contact__title {
+  margin-bottom: 12px;
+}
+
+.contact__title:last-child {
+  margin-bottom: 0;
+}

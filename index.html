@@ -10,9 +10,7 @@
 </head>
 
 <body class="page">
-
   <header></header>
-
   <main>
     <!-- Products -->
     <section class="section products">
@@ -53,13 +51,11 @@
         <button class="products__button-forward arrow-button arrow-button_type_forward"></button>
       </div>
     </section>
-
     <!-- Benefits -->
     <section class="section benefits">
       <h2 class="content-title">Benefits</h2>
       <ul class="benefits__container"></ul>
     </section>
-
     <!-- Gallery -->
     <section class="section section_content_centered gallery">
       <h2 class="content-title">Gallery</h2>
@@ -70,48 +66,66 @@
       </div>
       <h3 class="content-text gallery__slide-description">Description</h3>
     </section>
-
-    <!-- Customers -->
-    <section class="section customers">
-      <h2 class="content-title customers__title">Customers benefit despite of the automation level</h2>
-      <ul class="customers__container">
-        <li class="customers__item">
-          <img class="customers__image" src="./images/customers/labor-intensive.png" />
-          <h3 class="item-title customers__item-title">Labor-intensive dolly movements</h3>
-          <p class="item-description">Challenges: It is more and more difficult to hire workers, because they prefer to
-            work in delivery services for the same money.</p>
-        </li>
-        <li class="customers__item">
-          <img class="customers__image" src="./images/customers/forklifts.png" />
-          <h3 class="item-title customers__item-title">Forklifts, tuggers managed by man</h3>
-          <p class="item-description">Challenges: It is more and more difficult to hire forklift drivers because they
-            prefer to work in delivery for the same money.</p>
-        </li>
-        <li class="customers__item">
-          <img class="customers__image" src="./images/customers/follow-the-line.png" />
-          <h3 class="item-title customers__item-title">Follow-the-line robots</h3>
-          <p class="item-description">Challenges: It is time-consuming and expensive to replace old robots by
-            state-of-the art, but produced by another vendor.</p>
-        </li>
-        <li class="customers__item">
-          <img class="customers__image" src="./images/customers/autonomous.png" />
-          <h3 class="item-title customers__item-title">Autonomous mobile robots </h3>
-          <p class="item-description">Challenges: Limited upgrade options within the same vendor robot line only and too
-            expensive to use another vendor robots.</p>
-        </li>
-      </ul>
-    </section>
-
     <!-- Team -->
     <section class="section section_content_centered team">
       <h2 class="content-title">Team</h2>
       <ul class="team__container"></ul>
     </section>
-
     <!-- Work with us -->
     <section class="section work">
       <h2 class="work__title">Want to work with Us?</h2>
       <button class="work__button">Click here!</button>
+    </section>
+
+    <section class="section contact">
+      <div class="contact__container">
+        <div class="contact__header">
+
+          <h2 class="content-title">Contacts</h2>
+
+          <ul class="contact__list">
+
+            <li class="item-title_span_light contact__title">
+              <span class="item-title">
+                Address:
+              </span>
+              8000 Edgewater Dr., Oakland,
+              CA 94621, USA
+            </li>
+
+            <li class="item-title_span_light contact__title">
+              <span class="item-title">
+                Phone:
+              </span>
+              +1 (650) 209-0-269
+            </li>
+
+            <li class="item-title_span_light contact__title">
+              <a class="contact__list-email" href="mailto:info@robotics.tech">
+                <span class="item-title">
+                  Mail:
+                </span>
+                info@antrobotics.tech
+              </a>
+            </li>
+
+            <li class="item-title_span_light contact__title">
+              <a class="item-title contact__link" href="https://www.linkedin.com/company/antrobotics/" target="_blank">
+                LinkedIn
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <p class="contact__footer">© ANT Robotics, 2020.</p>
+      </div>
+
+      <!-- https://console.cloud.google.com/ To get an Api Key, then on google maps, get location, embed code option, copy and paste below, change width and height as needed -->
+      <iframe class="contact__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.1066972327435!2d-122.2033151484011!3d37.74064102179507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f85bee5c2f57b%3A0x115b0ab943d303e6!2s8000%20Edgewater%20Dr%2C%20Oakland%2C%20CA%2094621!5e0!3m2!1sen!2sus!4v1615246515812!5m2!1sen!2sus"
+        allowfullscreen="true" loading="lazy">
+      </iframe>
+
     </section>
 
   </main>
@@ -134,8 +148,9 @@
       <p class="item-description"></p>
     </li>
   </template>
-
   <script src="config.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    async></script>
   <script type="module" src="./components/Carousel.js"></script>
   <script type="module" src="./pages/index.js"></script>
 </body>
