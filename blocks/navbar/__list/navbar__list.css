@@ -6,3 +6,9 @@
   padding: 0;
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar__list {
+    margin: 0 123px 0 52px;
+  }
+}
