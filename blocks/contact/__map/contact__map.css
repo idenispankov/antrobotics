@@ -3,3 +3,16 @@
   height: 430px;
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  .contact__map {
+    width: 668px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact__map {
+    width: 280px;
+    height: 370px;
+  }
+}
