@@ -8,3 +8,8 @@
   line-height: 34px;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 320px) {
+  .popup__form-title {
+  }
+}
