@@ -8,8 +8,15 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  .page {
+    max-width: 768px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .page {
     padding: 8px;
+    max-width: 320px;
   }
 }

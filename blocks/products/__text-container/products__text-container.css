@@ -1,3 +1,17 @@
 .products__text-container {
   margin: 0 65px 0 0;
 }
+
+@media screen and (max-width: 768px) {
+  .products__text-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .products__text-container {
+    width: 280px;
+  }
+}
