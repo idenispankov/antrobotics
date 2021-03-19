@@ -7,3 +7,9 @@
   margin: 90px 0 0 0;
   padding: 0;
 }
+
+@media screen and (max-width: 320px) {
+  .team__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

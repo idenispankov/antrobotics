@@ -5,3 +5,10 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 320px) {
+  .content-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}

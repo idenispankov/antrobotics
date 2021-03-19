@@ -3,6 +3,20 @@
   background-color: #ffffff;
   color: #000000;
   padding: 10px;
-  max-width: 1260px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+    padding: 8px;
+    max-width: 320px;
+  }
 }

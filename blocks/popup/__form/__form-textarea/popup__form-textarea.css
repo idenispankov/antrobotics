@@ -3,3 +3,9 @@
   resize: none;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 320px) {
+  .popup__form-textarea {
+    margin-bottom: 81px;
+  }
+}

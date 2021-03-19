@@ -7,3 +7,18 @@
   letter-spacing: -0.04em;
   font-weight: normal;
 }
+
+@media screen and (max-width: 768px) {
+  .contact__footer {
+    position: absolute;
+    left: 40px;
+    bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact__footer {
+    bottom: 80px;
+    left: 12px;
+  }
+}

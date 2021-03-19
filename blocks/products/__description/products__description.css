@@ -1,3 +1,16 @@
 .products__description {
   margin: 22px 0 40px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .products__description {
+    width: 320px;
+    margin: 22px auto 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .products__description {
+    width: 280px;
+  }
+}
