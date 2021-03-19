@@ -2,14 +2,23 @@
   display: grid;
   list-style-type: none;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  gap: 40px;
   margin: 70px 0 0 0;
   padding: 0;
 }
 
+@media screen and (max-width: 769px) {
+  .benefits__container {
+    grid-template-columns: repeat(2, 235px);
+    margin-top: 82px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .benefits__container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 280px);
+    gap: 78px;
+    align-items: center;
+    text-align: center;
   }
 }
