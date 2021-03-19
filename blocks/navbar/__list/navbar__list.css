@@ -1,14 +1,6 @@
-@import url("./__list-item/navbar__list-item.css");
-
 .navbar__list {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-@media screen and (max-width: 768px) {
-  .navbar__list {
-    margin-left: 52px;
-    margin-right: 117px;
-  }
