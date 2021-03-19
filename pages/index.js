@@ -6,6 +6,12 @@ const navBarLogo = document.querySelector(".navbar__logo");
 const navBarSocial = document.querySelector(".navbar__social");
 const navBarListItems = document.querySelectorAll(".navbar__list-item");
 const sectionOne = document.querySelector(".header");
+const hamburgerButton = document.querySelector(".hamburger");
+const hamburgerButtonDark = document.querySelector(".hamburger-dark");
+const crossButton = document.querySelector(".cross");
+const crossButtonDark = document.querySelector(".cross-dark");
+const navList = document.querySelector(".navbar__list");
+const navLinks = document.querySelectorAll(".navbar__list-item");
 
 const sectionOneOptions = {
   rootMargin: "-75px 0px 0px 0px",
@@ -32,6 +38,35 @@ const sectionOneObserver = new IntersectionObserver(function (entries) {
 }, sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+// Hamburger Menu Click
+
+hamburgerButton.addEventListener("click", () => {
+  navList.classList.add("navbar__list-active");
+  hamburgerButton.style.display = "none";
+  crossButton.style.display = "block";
+});
+
+hamburgerButtonDark.addEventListener("click", () => {
+  navList.classList.add("navbar__list-active");
+  hamburgerButtonDark.style.display = "none";
+  crossButton.style.display = "block";
+});
+
+crossButton.addEventListener("click", () => {
+  navList.classList.remove("navbar__list-active");
+
+  crossButton.style.display = "none";
+  hamburgerButton.style.display = "block";
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navList.classList.remove("navbar__list-active");
+    crossButton.style.display = "none";
+    hamburgerButton.style.display = "block";
+  });
+});
 
 // Add Benefits
 function addBenefits() {
