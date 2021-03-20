@@ -24,75 +24,103 @@
 
 
 
+.navbar-scrolled {
+  background-color: #efefef;
+  color: #000;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 320px) {
+  .navbar__list-item {
+    padding-bottom: 18px;
+  }
+
+  .navbar__list-item:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.navbar__button {
+  display: none;
+}
+
 .hamburger {
   display: none;
-  border: none;
-  outline: none;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0);
 }
 
 .cross {
   display: none;
 }
 
-.hamburger-dark {
-  display: none;
-}
-
 @media screen and (max-width: 320px) {
-  .navbar {
-    box-sizing: border-box;
-    min-width: 280px;
-    left: 20px;
-    padding: 17px 14px;
-    justify-content: unset;
-  }
-
-  .navbar__logo {
-    margin-right: 110px;
-  }
-
-  .navbar__social {
-    margin-right: 23px;
-  }
-
-  .header {
-    padding: 12px 14px 0;
-  }
-
   .hamburger {
     display: block;
-    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 16px;
+    height: 14px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line::before,
+  .line::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+
+  .line::after {
+    top: 5px;
   }
 
   .cross {
-    display: none;
-    padding: 0;
-  }
-
-  .navbar__list {
-    display: none;
-  }
-
-  .navbar__list-active {
-    display: block;
     position: absolute;
-    top: 70px;
-    left: 0;
-    width: 280px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 0;
-    background-color: #393939;
+    top: 50%;
+    right: 20px;
+    width: 16px;
+    height: 14px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
   }
 
-  .navbar__list-item {
-    margin: 0;
+  .cross-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(135deg);
   }
 
-  .navbar__list-item_mobile {
-    padding-bottom: 18px;
+  .cross-line::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transform: rotate(90deg);
   }
 }

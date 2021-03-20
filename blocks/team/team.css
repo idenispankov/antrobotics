@@ -1,6 +1,17 @@
-@import url('./__container/team__container.css');
-@import url('./__image/team__image.css');
-@import url('./__item-title/team__item-title.css');
-@import url('./__item/team__item.css');
-@import url('./__position/team__position.css');
+@import url("./__container/team__container.css");
+@import url("./__image/team__image.css");
+@import url("./__item-title/team__item-title.css");
+@import url("./__item/team__item.css");
+@import url("./__position/team__position.css");
 
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 110px 119px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 50px 32px 80px;
+  }
+}

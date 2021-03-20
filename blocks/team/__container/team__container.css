@@ -8,8 +8,16 @@
   padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .team__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 320px) {
   .team__container {
     grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin-top: 40px;
   }
 }
