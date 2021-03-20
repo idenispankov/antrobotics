@@ -168,7 +168,7 @@ const productsCarousel = new Carousel({
 // Popup
 const popup = document.querySelector(".popup");
 const inputs = document.querySelectorAll(".popup__form-input");
-const formButton = document.querySelector(".work__button");
+// const formButton = document.querySelector(".work__button");
 
 function openPopup() {
   popup.classList.add("popup-open");
@@ -190,7 +190,7 @@ function escClosePopup(e) {
   }
 }
 
-formButton.addEventListener("click", openPopup);
+//formButton.addEventListener("click", openPopup);
 document.addEventListener("click", closePopup);
 document.addEventListener("keyup", escClosePopup);
 

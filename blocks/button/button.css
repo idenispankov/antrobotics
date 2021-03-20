@@ -1,0 +1,18 @@
+@import url('./_type/button_type_large.css');
+@import url('./_type/button_type_small.css');
+@import url('./_span/button_span_black.css');
+@import url('./_span/button_span_bright.css');
+@import url('./_span/button_span_dark.css');
+
+.button {
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 500;
+  outline: none;
+  transition: opacity 0.3s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
