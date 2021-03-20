@@ -19,6 +19,52 @@
 @import url("../blocks/popup/popup.css");
 @import url("../blocks/contact/contact.css");
 @import url("../blocks/customers/customers.css");
+@import url("../blocks/banner/banner.css");
+
+.button {
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  transition: opacity 0.3s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.button_type_large {
+  width: 160px;
+  height: 42px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button_type_small {
+  width: 99px;
+  height: 26px;
+  border-radius: 4px;
+  font-size: 9px;
+  line-height: 16px;
+}
+
+.button_span_dark {
+  border: 1px solid #717171;
+  background: none;
+  color: #a0a0a0;
+}
+.button_span_black {
+  background: #000000;
+  color: #ffffff;
+}
+
+.button_span_bright {
+  background: #faa805;
+  color: #ffffff;
+}
 
 .hamburger {
   display: none;
