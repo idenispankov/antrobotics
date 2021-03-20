@@ -39,21 +39,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Close burger menu on click
-navLogo.addEventListener("click", () => {
-  menuBtn.classList.remove("open");
-  menuOpen = false;
-  navList.style.display = "none";
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-    navList.style.display = "none";
-  });
-});
-
 // Add Benefits
 function addBenefits() {
   const benefitsContainer = document.querySelector(".benefits__container");
