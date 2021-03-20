@@ -27,3 +27,13 @@
     min-width: 708px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    top: 22px;
+    margin: 0 12px 0;
+    min-width: 280px;
+    justify-content: start;
+    padding: 17px 12px;
+  }
+}

@@ -19,3 +19,104 @@
 @import url("../blocks/popup/popup.css");
 @import url("../blocks/contact/contact.css");
 @import url("../blocks/customers/customers.css");
+
+.navbar-scrolled {
+  background-color: #efefef;
+  color: #000;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 320px) {
+  .navbar__list-item {
+    padding-bottom: 18px;
+  }
+
+  .navbar__list-item:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.navbar__button {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.cross {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 16px;
+    height: 14px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .line::before,
+  .line::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+
+  .line::after {
+    top: 5px;
+  }
+
+  .cross {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 16px;
+    height: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .cross-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(135deg);
+  }
+
+  .cross-line::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transform: rotate(90deg);
+  }
+}

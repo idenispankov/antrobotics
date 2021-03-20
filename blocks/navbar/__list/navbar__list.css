@@ -4,3 +4,17 @@
   padding: 0;
   margin: 0;
 }
+
+@media screen and (max-width: 320px) {
+  .navbar__list {
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    text-align: center;
+    min-width: 280px;
+    padding: 20px 0;
+    background: #393939;
+    display: none;
+  }
+}

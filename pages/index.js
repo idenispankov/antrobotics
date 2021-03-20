@@ -1,37 +1,56 @@
 import Carousel from "../components/Carousel.js";
 
+// Navbar hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const cross = document.querySelector(".cross");
+const navbarList = document.querySelector(".navbar__list");
+
+hamburger.addEventListener("click", () => {
+  navbarList.style.display = "block";
+  hamburger.style.display = "none";
+  cross.style.display = "block";
+});
+
+cross.addEventListener("click", () => {
+  navbarList.style.display = "none";
+  cross.style.display = "none";
+  hamburger.style.display = "block";
+});
+
 // Navbar Scrolling Style Change
-// const navBar = document.querySelector(".navbar");
-// const navBarLogo = document.querySelector(".navbar__logo");
-// const navBarSocial = document.querySelector(".navbar__social");
-// const navBarListItems = document.querySelectorAll(".navbar__list-item");
-// const sectionOne = document.querySelector(".header");
+const navBar = document.querySelector(".navbar");
+const navBarLogo = document.querySelector(".navbar__logo");
+const navBarSocial = document.querySelector(".navbar__social");
+const navBarList = document.querySelector(".navbar__list");
+const navBarListItems = document.querySelectorAll(".navbar__list-item");
+const sectionOne = document.querySelector(".header");
 
-// const sectionOneOptions = {
-//   rootMargin: "-75px 0px 0px 0px",
-// };
+const sectionOneOptions = {
+  rootMargin: "-75px 0px 0px 0px",
+};
 
-// const sectionOneObserver = new IntersectionObserver(function (entries) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) {
-//       navBar.classList.add("navbar-scrolled");
-//       navBarLogo.classList.add("navbar-scrolled");
-//       navBarSocial.classList.add("navbar-scrolled");
-//       navBarListItems.forEach((item) => {
-//         item.classList.add("navbar-scrolled");
-//       });
-//     } else {
-//       navBar.classList.remove("navbar-scrolled");
-//       navBarLogo.classList.remove("navbar-scrolled");
-//       navBarSocial.classList.remove("navbar-scrolled");
-//       navBarListItems.forEach((item) => {
-//         item.classList.remove("navbar-scrolled");
-//       });
-//     }
-//   });
-// }, sectionOneOptions);
+const sectionOneObserver = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      navBar.classList.add("navbar-scrolled");
+      navBarLogo.classList.add("navbar-scrolled");
+      navBarSocial.classList.add("navbar-scrolled");
 
-// sectionOneObserver.observe(sectionOne);
+      navBarListItems.forEach((item) => {
+        item.classList.add("navbar-scrolled");
+      });
+    } else {
+      navBar.classList.remove("navbar-scrolled");
+      navBarLogo.classList.remove("navbar-scrolled");
+      navBarSocial.classList.remove("navbar-scrolled");
+      navBarListItems.forEach((item) => {
+        item.classList.remove("navbar-scrolled");
+      });
+    }
+  });
+}, sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
 
 // Add Benefits
 function addBenefits() {
