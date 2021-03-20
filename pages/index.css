@@ -22,7 +22,20 @@
 @import url("../blocks/banner/banner.css");
 @import url("../blocks/button/button.css");
 
+.banner {
+  display: flex;
+  justify-content: center;
+}
 
+.banner__container {
+  width: 330px;
+  text-align: center;
+  padding: 0 100px 0 93px;
+}
+
+.banner__description {
+  margin: 16px 0 92px 0;
+}
 
 .hamburger {
   display: none;
