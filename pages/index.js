@@ -1,8 +1,13 @@
 import Carousel from "../components/Carousel.js";
 
 // Hamburger Menu
+const navBar = document.querySelector(".navbar");
+const navLogo = document.querySelector(".navbar__logo");
+const navSocial = document.querySelector(".navbar__social");
 const navList = document.querySelector(".navbar__list");
+const navLinks = document.querySelectorAll(".navbar__list-link");
 const menuBtn = document.querySelector(".menu-btn");
+
 let menuOpen = false;
 
 menuBtn.addEventListener("click", () => {
@@ -15,6 +20,38 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
     navList.style.display = "none";
   }
+});
+
+// Scroll style change
+window.addEventListener("scroll", () => {
+  if (window.scrollY > "372") {
+    (navBar.style.background = "#efefef"), (navBar.style.color = "#000");
+    navLogo.style.color = "#000";
+    navSocial.style.color = "#000";
+    navList.style.background = "#efefef";
+    navLinks.forEach((link) => (link.style.color = "#000"));
+  } else {
+    (navBar.style.background = "#393939"), (navBar.style.color = "#fff");
+    navLogo.style.color = "#fff";
+    navSocial.style.color = "#fff";
+    navList.style.background = "#393939";
+    navLinks.forEach((link) => (link.style.color = "#fff"));
+  }
+});
+
+// Close burger menu on click
+navLogo.addEventListener("click", () => {
+  menuBtn.classList.remove("open");
+  menuOpen = false;
+  navList.style.display = "none";
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+    navList.style.display = "none";
+  });
 });
 
 // Add Benefits

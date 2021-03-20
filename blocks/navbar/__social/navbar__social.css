@@ -5,6 +5,8 @@
   font-size: 20px;
   line-height: 14px;
   letter-spacing: -0.04em;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
   transition: opacity 0.5s linear;
 }
