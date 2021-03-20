@@ -1,56 +1,58 @@
 import Carousel from "../components/Carousel.js";
 
-// Navbar hamburger menu
-const hamburger = document.querySelector(".hamburger");
-const cross = document.querySelector(".cross");
-const navbarList = document.querySelector(".navbar__list");
-
-hamburger.addEventListener("click", () => {
-  navbarList.style.display = "block";
-  hamburger.style.display = "none";
-  cross.style.display = "block";
-});
-
-cross.addEventListener("click", () => {
-  navbarList.style.display = "none";
-  cross.style.display = "none";
-  hamburger.style.display = "block";
-});
-
-// Navbar Scrolling Style Change
+// Hamburger Menu
 const navBar = document.querySelector(".navbar");
-const navBarLogo = document.querySelector(".navbar__logo");
-const navBarSocial = document.querySelector(".navbar__social");
-const navBarList = document.querySelector(".navbar__list");
-const navBarListItems = document.querySelectorAll(".navbar__list-item");
-const sectionOne = document.querySelector(".header");
+const navLogo = document.querySelector(".navbar__logo");
+const navSocial = document.querySelector(".navbar__social");
+const navList = document.querySelector(".navbar__list");
+const navLinks = document.querySelectorAll(".navbar__list-link");
+const menuBtn = document.querySelector(".menu-btn");
 
-const sectionOneOptions = {
-  rootMargin: "-75px 0px 0px 0px",
-};
+let menuOpen = false;
 
-const sectionOneObserver = new IntersectionObserver(function (entries) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      navBar.classList.add("navbar-scrolled");
-      navBarLogo.classList.add("navbar-scrolled");
-      navBarSocial.classList.add("navbar-scrolled");
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+    navList.style.display = "flex";
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+    navList.style.display = "none";
+  }
+});
 
-      navBarListItems.forEach((item) => {
-        item.classList.add("navbar-scrolled");
-      });
-    } else {
-      navBar.classList.remove("navbar-scrolled");
-      navBarLogo.classList.remove("navbar-scrolled");
-      navBarSocial.classList.remove("navbar-scrolled");
-      navBarListItems.forEach((item) => {
-        item.classList.remove("navbar-scrolled");
-      });
-    }
+// Scroll style change
+window.addEventListener("scroll", () => {
+  if (window.scrollY > "372") {
+    (navBar.style.background = "#efefef"), (navBar.style.color = "#000");
+    navLogo.style.color = "#000";
+    navSocial.style.color = "#000";
+    navList.style.background = "#efefef";
+    navLinks.forEach((link) => (link.style.color = "#000"));
+  } else {
+    (navBar.style.background = "#393939"), (navBar.style.color = "#fff");
+    navLogo.style.color = "#fff";
+    navSocial.style.color = "#fff";
+    navList.style.background = "#393939";
+    navLinks.forEach((link) => (link.style.color = "#fff"));
+  }
+});
+
+// Close burger menu on click
+navLogo.addEventListener("click", () => {
+  menuBtn.classList.remove("open");
+  menuOpen = false;
+  navList.style.display = "none";
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+    navList.style.display = "none";
   });
-}, sectionOneOptions);
-
-sectionOneObserver.observe(sectionOne);
+});
 
 // Add Benefits
 function addBenefits() {

@@ -5,4 +5,15 @@
   font-size: 12px;
   line-height: 14px;
   margin-right: 14px;
+  transition: opacity 0.5s linear;
+}
+
+.navbar__list-link:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 320px) {
+  .navbar__list-link {
+    margin: 0;
+  }
 }

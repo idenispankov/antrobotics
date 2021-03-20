@@ -13,8 +13,14 @@
     left: 0;
     text-align: center;
     min-width: 280px;
+    height: 214px;
     padding: 20px 0;
     background: #393939;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
     display: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
   }
 }
