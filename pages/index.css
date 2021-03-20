@@ -22,11 +22,7 @@
 @import url("../blocks/banner/banner.css");
 @import url("../blocks/button/button.css");
 
-.banner__img {
-  position: relative;
-  left: -110px;
-  top: 10px;
-}
+
 
 .hamburger {
   display: none;
