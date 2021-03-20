@@ -19,6 +19,10 @@
 @import url("../blocks/popup/popup.css");
 @import url("../blocks/contact/contact.css");
 @import url("../blocks/customers/customers.css");
+@import url("../blocks/banner/banner.css");
+@import url("../blocks/button/button.css");
+
+
 
 .navbar-scrolled {
   background-color: #efefef;

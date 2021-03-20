@@ -6,6 +6,12 @@
   padding: 0;
 }
 
+.content-title_theme_light {
+  color: #ffffff;
+}
+
+
+
 @media screen and (max-width: 320px) {
   .content-title {
     font-size: 28px;

@@ -1,0 +1,8 @@
+<svg width="222" height="354" viewBox="0 0 222 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M181 0L181 150C181 166.569 167.569 180 151 180L136 180" stroke="white" stroke-width="4"/>
+<line x1="202" y1="170" x2="202" y2="354" stroke="white" stroke-width="4"/>
+<path d="M0 204L151 204C167.569 204 181 217.431 181 234L181 249" stroke="white" stroke-width="4"/>
+<rect x="165" y="49" width="32" height="32" fill="#FAA805"/>
+<rect x="58" y="191" width="26" height="26" fill="#FAA805"/>
+<rect x="182" y="283" width="40" height="40" fill="#FAA805"/>
+</svg>

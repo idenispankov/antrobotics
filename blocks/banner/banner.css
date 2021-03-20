@@ -1,0 +1,10 @@
+@import url("./__container/banner__container.css");
+@import url("./__description/banner__description.css");
+@import url("./__img/banner__img.css");
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 150px;
+}
