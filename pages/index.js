@@ -24,7 +24,7 @@ menuBtn.addEventListener("click", () => {
 
 // Scroll style change
 window.addEventListener("scroll", () => {
-  if (window.scrollY > "372") {
+  if (window.scrollY > "400") {
     (navBar.style.background = "#efefef"), (navBar.style.color = "#000");
     navLogo.style.color = "#000";
     navSocial.style.color = "#000";
