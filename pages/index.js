@@ -28,10 +28,15 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-// window.addEventListener('')
-window.addEventListener("", () => {
-  navList.style.display = "flex";
-});
+const onresize = (e) => {
+  let width = document.body.clientWidth;
+  if (width > 400) {
+    navList.style.display = "flex";
+  }
+  console.log(width);
+};
+
+window.addEventListener("resize", onresize);
 
 // Scroll style change
 window.addEventListener("scroll", () => {
