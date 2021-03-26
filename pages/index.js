@@ -7,6 +7,12 @@ const navSocial = document.querySelector(".navbar__social");
 const navList = document.querySelector(".navbar__list");
 const navLinks = document.querySelectorAll(".navbar__list-link");
 const menuBtn = document.querySelector(".menu-btn");
+const menuBtnBurger = document.querySelectorAll(".menu-btn__burger");
+const menuBtnBurgerBefore = document.querySelector(".menu-btn__burger-before");
+const menuBtnBurgerPresent = document.querySelector(
+  ".menu-btn__burger-present"
+);
+const menuBtnBurgerAfter = document.querySelector(".menu-btn__burger-after");
 
 let menuOpen = false;
 
@@ -28,13 +34,21 @@ window.addEventListener("scroll", () => {
     (navBar.style.background = "#efefef"), (navBar.style.color = "#000");
     navLogo.style.color = "#000";
     navSocial.style.color = "#000";
+    menuBtnBurgerBefore.style.backgroundColor = "#000";
+    menuBtnBurgerPresent.style.backgroundColor = "#000";
+    menuBtnBurgerAfter.style.backgroundColor = "#000";
     navList.style.background = "#efefef";
+    menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#000"));
     navLinks.forEach((link) => (link.style.color = "#000"));
   } else {
     (navBar.style.background = "#393939"), (navBar.style.color = "#fff");
     navLogo.style.color = "#fff";
     navSocial.style.color = "#fff";
+    menuBtnBurgerBefore.style.backgroundColor = "#fff";
+    menuBtnBurgerPresent.style.backgroundColor = "#fff";
+    menuBtnBurgerAfter.style.backgroundColor = "#fff";
     navList.style.background = "#393939";
+    menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#fff"));
     navLinks.forEach((link) => (link.style.color = "#fff"));
   }
 });
@@ -139,7 +153,7 @@ const productsCarousel = new Carousel({
 // Popup
 const popup = document.querySelector(".popup");
 const inputs = document.querySelectorAll(".popup__form-input");
-// const formButton = document.querySelector(".work__button");
+const formButton = document.querySelector(".work__button");
 
 function openPopup() {
   popup.classList.add("popup-open");
@@ -161,7 +175,7 @@ function escClosePopup(e) {
   }
 }
 
-//formButton.addEventListener("click", openPopup);
+formButton.addEventListener("click", openPopup);
 document.addEventListener("click", closePopup);
 document.addEventListener("keyup", escClosePopup);
 
