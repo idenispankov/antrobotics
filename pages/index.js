@@ -33,7 +33,6 @@ const onresize = (e) => {
   if (width > 400) {
     navList.style.display = "flex";
   }
-  console.log(width);
 };
 
 window.addEventListener("resize", onresize);
