@@ -28,6 +28,11 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+// window.addEventListener('')
+window.addEventListener("", () => {
+  navList.style.display = "flex";
+});
+
 // Scroll style change
 window.addEventListener("scroll", () => {
   if (window.scrollY > "400") {
