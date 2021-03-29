@@ -3,15 +3,6 @@
 @import url("./__item-title/team__item-title.css");
 @import url("./__item/team__item.css");
 @import url("./__position/team__position.css");
+@import url("./__item-description/team__item-description.css");
 
-@media screen and (max-width: 768px) {
-  .team {
-    padding: 110px 119px;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .team {
-    padding: 50px 32px 80px;
-  }
-}

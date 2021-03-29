@@ -1,6 +1,11 @@
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1270px) {
   .customers__item-description {
     max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .customers__item-description {
     text-align: center;
   }
 }

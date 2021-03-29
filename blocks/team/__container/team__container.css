@@ -8,16 +8,18 @@
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .team__container {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 90px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .team__container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
+    row-gap: 50px;
     margin-top: 40px;
   }
 }
