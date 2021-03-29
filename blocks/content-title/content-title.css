@@ -10,7 +10,7 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .content-title {
     font-size: 28px;
     line-height: 32px;

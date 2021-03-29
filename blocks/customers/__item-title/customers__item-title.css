@@ -1,11 +1,5 @@
 .customers__item-title {
   margin-top: 30px;
   margin-bottom: 22px;
-  min-height: 38px;
 }
 
-@media screen and (max-width: 320px) {
-  .customers__item-title {
-    min-height: 19px;
-  }
-}

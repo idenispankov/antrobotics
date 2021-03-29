@@ -8,7 +8,7 @@
   margin: 90px 0 0 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1270px) {
   .customers__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 78px;
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
   .customers__container {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 70px;

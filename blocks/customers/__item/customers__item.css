@@ -1,10 +1,9 @@
 .customers__item {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
   .customers__item {
     align-items: center;
   }
