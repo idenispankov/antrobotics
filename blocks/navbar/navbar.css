@@ -75,6 +75,12 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .navbar {
+    min-width: 88%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .navbar {
     top: 22px;
