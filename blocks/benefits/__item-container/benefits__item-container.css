@@ -1,0 +1,7 @@
+@media screen and (max-width: 320px) {
+  .benefits__item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

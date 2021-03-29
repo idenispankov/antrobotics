@@ -6,8 +6,3 @@
   border-radius: 6px;
 }
 
-@media screen and (max-width: 320px) {
-  .benefits__image-container {
-    margin: 0 auto;
-  }
-}

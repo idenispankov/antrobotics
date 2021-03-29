@@ -188,7 +188,6 @@ formButton.addEventListener("click", openPopup);
 document.addEventListener("click", closePopup);
 document.addEventListener("keyup", escClosePopup);
 
-// Functions Call
 galleryCarousel.generateCarousel();
 productsCarousel.generateCarousel();
 addBenefits();

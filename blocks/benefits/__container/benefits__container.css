@@ -2,23 +2,24 @@
   display: grid;
   list-style-type: none;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  column-gap: 40px;
   margin: 70px 0 0 0;
   padding: 0;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .benefits__container {
-    grid-template-columns: repeat(2, 235px);
-    margin-top: 82px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 78px;
+    row-gap: 104px;
+    margin: 82px 0 0 0;
   }
 }
 
 @media screen and (max-width: 320px) {
   .benefits__container {
-    grid-template-columns: repeat(1, 280px);
-    gap: 78px;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+    margin: 40px 0 0 0;
   }
 }
