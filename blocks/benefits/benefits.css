@@ -3,7 +3,7 @@
 @import url("./__image-container/benefits__image-container.css");
 @import url("./__item-container/benefits__item-container.css");
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .benefits {
     text-align: center;
   }

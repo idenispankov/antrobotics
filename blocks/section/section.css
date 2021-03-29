@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .section {
     padding: 50px 12px 80px;
     margin-bottom: 8px;
