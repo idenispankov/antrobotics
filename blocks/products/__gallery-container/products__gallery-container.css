@@ -4,13 +4,25 @@
   background: #ffffff;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.04);
   border-radius: 6px;
-  padding: 62px 22px;
-  max-width: 575px;
-  flex-shrink: 0;
+  padding: 62px 80px;
+  position: relative;
+  height: 200px;
+  width: 415px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1060px) {
   .products__gallery-container {
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .products__gallery-container {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    min-width: 256px;
+    height: auto;
+    padding: 30px 12px 36px;
   }
 }

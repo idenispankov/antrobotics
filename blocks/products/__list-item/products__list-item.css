@@ -6,3 +6,11 @@
 .products__list-item:last-child {
   margin: 0;
 }
+
+@media screen and (max-width: 1060px) {
+  .products__list-item {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+}

@@ -1,5 +1,11 @@
 .products__image-container {
   width: 160px;
   height: 160px;
-  margin: 0 35px 0 40px;
+  margin: 0 35px 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .products__image-container {
+    margin: 0 0 20px 0;
+  }
 }

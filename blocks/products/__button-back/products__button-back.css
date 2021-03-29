@@ -1,0 +1,12 @@
+.products__button-back {
+  position: absolute;
+  left: 5px;
+  top: 136px;
+}
+
+@media screen and (max-width: 600px) {
+  .products__button-back {
+    left: 0;
+    top: 84px;
+  }
+}

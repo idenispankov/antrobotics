@@ -1,5 +1,7 @@
+@import url("./_span_bold/item-description_span_bold.css");
+
 .item-description {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 10px;
   line-height: 16px;
   color: #525252;
@@ -12,4 +14,16 @@
 }
 .item-description#charging-time {
   margin: 0 0 56px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .item-description#max-payload {
+    margin: 18px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .item-description#charging-time {
+    margin: 0 0 32px 0;
+  }
 }

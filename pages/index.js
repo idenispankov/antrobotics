@@ -114,9 +114,7 @@ function addTeam() {
 
 // Gallery item
 function populateGalleryItem(item) {
-  document.querySelector(
-    ".gallery__image"
-  ).src = item.image;
+  document.querySelector(".gallery__image").src = item.image;
   document.querySelector(".gallery__slide-description").textContent =
     item.description;
 }
@@ -130,17 +128,19 @@ function populateProductsItem(item) {
     item.name;
   document.querySelector(
     "#max-payload"
-  ).textContent = `Max payload: ${item.features.max_payload}`;
-  document.querySelector("#size").textContent = `Size: ${item.features.size}`;
+  ).innerHTML = `Max payload: <span class="item-description_span_bold">${item.features.max_payload}</span>`;
+  document.querySelector(
+    "#size"
+  ).innerHTML = `Size: <span class="item-description_span_bold">${item.features.size}</span>`;
   document.querySelector(
     "#max-speed"
-  ).textContent = `Max speed: ${item.features.max_speed}`;
+  ).innerHTML = `Max speed: <span class="item-description_span_bold">${item.features.max_speed}</span>`;
   document.querySelector(
     "#running-time"
-  ).textContent = `Running time: ${item.features.running_time}`;
+  ).innerHTML = `Running time: <span class="item-description_span_bold">${item.features.running_time}</span>`;
   document.querySelector(
     "#charging-time"
-  ).textContent = `Charging time: ${item.features.charging_time}`;
+  ).innerHTML = `Charging time: <span class="item-description_span_bold">${item.features.charging_time}</span>`;
 }
 
 // Gallery Carousel

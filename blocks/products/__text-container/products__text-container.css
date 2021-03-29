@@ -2,16 +2,13 @@
   margin: 0 65px 0 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1060px) {
   .products__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 0 auto;
-    width: 420px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .products__text-container {
-    width: 280px;
+    margin: 0;
+    max-width: 420px;
   }
 }

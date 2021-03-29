@@ -1,0 +1,12 @@
+.products__button-forward {
+  position: absolute;
+  right: 5px;
+  top: 136px;
+}
+
+@media screen and (max-width: 600px) {
+  .products__button-forward {
+    right: 0;
+    top: 84px;
+  }
+}

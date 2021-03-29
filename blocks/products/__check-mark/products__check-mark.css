@@ -1,3 +1,9 @@
 .products__check-mark {
   margin: 0 14px 0 0;
 }
+
+@media screen and (max-width: 1060px) {
+  .products__check-mark {
+    margin: 0 0 8px;
+  }
+}

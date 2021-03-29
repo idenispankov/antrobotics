@@ -6,21 +6,23 @@
 @import url("./__gallery-container/products__gallery-container.css");
 @import url("./__image-container/products__image-container.css");
 @import url("./__item-description-container/products__item-description-container.css");
+@import url('./__button-back/products__button-back.css');
+@import url('./__button-forward/products__button-forward.css');
 
 .products {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1060px) {
   .products {
-    padding-left: 86px;
-    padding-right: 87px;
+    padding: 110px 87px;
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 320px) {
   .products {
-    padding: 30px 12px 80px;
+    padding: 10px 12px 80px;
   }
 }
