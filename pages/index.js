@@ -99,7 +99,7 @@ formButton.addEventListener("click", openPopup);
 document.addEventListener("click", closePopup);
 document.addEventListener("keyup", escClosePopup);
 
-// Carousels and Inflators
+// Create and inflate all sections
 new Carousel({
   data: data.gallery,
   btnBackClass: "gallery__button-back",
