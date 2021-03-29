@@ -1,6 +1,5 @@
 @import url('./__title/work__title.css');
 
-
 .work {
   padding: 19px 100px;
   display: flex;
@@ -14,10 +13,10 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .work {
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    align-items: center;
+    padding: 50px 53px 60px;
   }
 }
