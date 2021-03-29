@@ -1,4 +1,5 @@
 import Carousel from "../components/Carousel.js";
+import Inflator from "../components/Inflator.js";
 
 // Hamburger Menu
 const navBar = document.querySelector(".navbar");
@@ -62,103 +63,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Add Benefits
-function addBenefits() {
-  const benefitsContainer = document.querySelector(".benefits__container");
-  const benefitsElementTemplate = document.querySelector("#benefits-template")
-    .content;
-  data.benefits.map((item) => {
-    const benefitsItem = benefitsElementTemplate.cloneNode(true);
-    benefitsItem.querySelector(
-      ".benefits__image-container"
-    ).style.background = `url(${item.image}) center no-repeat`;
-    benefitsItem.querySelector(".item-title").textContent = item.title;
-    benefitsItem.querySelector(".item-description").textContent =
-      item.description;
-    benefitsContainer.append(benefitsItem);
-  });
-}
-
-// Customers
-function addCustomers() {
-  const customersContainer = document.querySelector(".customers__container");
-  const customersElementTemplate = document.querySelector("#customers-template")
-    .content;
-  data.customers.map((item) => {
-    const customersItem = customersElementTemplate.cloneNode(true);
-    const img = customersItem.querySelector(".customers__image");
-    img.src = item.image;
-    img.alt = item.title;
-    customersItem.querySelector(".item-title").textContent = item.title;
-    customersItem.querySelector(".item-description").textContent =
-      item.description;
-    customersContainer.append(customersItem);
-  });
-}
-
-// Add Team
-function addTeam() {
-  const teamContainer = document.querySelector(".team__container");
-  const teamElementTemplate = document.querySelector("#team-template").content;
-  data.team.map((item) => {
-    const teamItem = teamElementTemplate.cloneNode(true);
-    const img = teamItem.querySelector(".team__image");
-    img.src = item.image;
-    img.alt = item.name;
-    teamItem.querySelector(".item-title").textContent = item.name;
-    teamItem.querySelector(".team__position").textContent = item.position;
-    teamItem.querySelector(".item-description").textContent = item.description;
-    teamContainer.append(teamItem);
-  });
-}
-
-// Gallery item
-function populateGalleryItem(item) {
-  document.querySelector(".gallery__image").src = item.image;
-  document.querySelector(".gallery__slide-description").textContent =
-    item.description;
-}
-
-// Products Item
-function populateProductsItem(item) {
-  document.querySelector(
-    ".products__image-container"
-  ).style.background = `url(${item.image}) center/cover no-repeat`;
-  document.querySelector(".products").querySelector(".item-title").textContent =
-    item.name;
-  document.querySelector(
-    "#max-payload"
-  ).innerHTML = `Max payload: <span class="item-description_span_bold">${item.features.max_payload}</span>`;
-  document.querySelector(
-    "#size"
-  ).innerHTML = `Size: <span class="item-description_span_bold">${item.features.size}</span>`;
-  document.querySelector(
-    "#max-speed"
-  ).innerHTML = `Max speed: <span class="item-description_span_bold">${item.features.max_speed}</span>`;
-  document.querySelector(
-    "#running-time"
-  ).innerHTML = `Running time: <span class="item-description_span_bold">${item.features.running_time}</span>`;
-  document.querySelector(
-    "#charging-time"
-  ).innerHTML = `Charging time: <span class="item-description_span_bold">${item.features.charging_time}</span>`;
-}
-
-// Gallery Carousel
-const galleryCarousel = new Carousel({
-  data: data.gallery,
-  btnBackClass: "gallery__button-back",
-  btnForwardClass: "gallery__button-forward",
-  populateItem: populateGalleryItem,
-});
-
-// Products Carousel
-const productsCarousel = new Carousel({
-  data: data.products,
-  btnBackClass: "products__button-back",
-  btnForwardClass: "products__button-forward",
-  populateItem: populateProductsItem,
-});
-
 // Popup
 const popup = document.querySelector(".popup");
 const inputs = document.querySelectorAll(".popup__form-input");
@@ -188,8 +92,99 @@ formButton.addEventListener("click", openPopup);
 document.addEventListener("click", closePopup);
 document.addEventListener("keyup", escClosePopup);
 
+// Populate functions
+function populateBenefitsItem(item, htmlItem) {
+  htmlItem.querySelector(
+    ".benefits__image-container"
+  ).style.background = `url(${item.image}) center no-repeat`;
+  htmlItem.querySelector(".item-title").textContent = item.title;
+  htmlItem.querySelector(".item-description").textContent = item.description;
+}
+
+function populateCustomersItem(item, htmlItem) {
+  const img = htmlItem.querySelector(".customers__image");
+  img.src = item.image;
+  img.alt = item.title;
+  htmlItem.querySelector(".item-title").textContent = item.title;
+  htmlItem.querySelector(".item-description").textContent = item.description;
+}
+
+function populateTeamItem(item, htmlItem) {
+  const img = htmlItem.querySelector(".team__image");
+  img.src = item.image;
+  img.alt = item.name;
+  htmlItem.querySelector(".item-title").textContent = item.name;
+  htmlItem.querySelector(".team__position").textContent = item.position;
+  htmlItem.querySelector(".item-description").textContent = item.description;
+}
+
+function populateGalleryItem(item) {
+  document.querySelector(".gallery__image").src = item.image;
+  document.querySelector(".gallery__slide-description").textContent =
+    item.description;
+}
+
+function populateProductsItem(item) {
+  document.querySelector(
+    ".products__image-container"
+  ).style.background = `url(${item.image}) center/cover no-repeat`;
+  document.querySelector(".products").querySelector(".item-title").textContent =
+    item.name;
+  document.querySelector(
+    "#max-payload"
+  ).innerHTML = `Max payload: <span class="item-description_span_bold">${item.features.max_payload}</span>`;
+  document.querySelector(
+    "#size"
+  ).innerHTML = `Size: <span class="item-description_span_bold">${item.features.size}</span>`;
+  document.querySelector(
+    "#max-speed"
+  ).innerHTML = `Max speed: <span class="item-description_span_bold">${item.features.max_speed}</span>`;
+  document.querySelector(
+    "#running-time"
+  ).innerHTML = `Running time: <span class="item-description_span_bold">${item.features.running_time}</span>`;
+  document.querySelector(
+    "#charging-time"
+  ).innerHTML = `Charging time: <span class="item-description_span_bold">${item.features.charging_time}</span>`;
+}
+
+// Carousels and Inflators
+const galleryCarousel = new Carousel({
+  data: data.gallery,
+  btnBackClass: "gallery__button-back",
+  btnForwardClass: "gallery__button-forward",
+  populateItem: populateGalleryItem,
+});
+
+const productsCarousel = new Carousel({
+  data: data.products,
+  btnBackClass: "products__button-back",
+  btnForwardClass: "products__button-forward",
+  populateItem: populateProductsItem,
+});
+
+const teamInflator = new Inflator({
+  data: data.team,
+  container: "team__container",
+  template: "team-template",
+  populateItem: populateTeamItem,
+});
+
+const benefitsInflator = new Inflator({
+  data: data.benefits,
+  container: "benefits__container",
+  template: "benefits-template",
+  populateItem: populateBenefitsItem,
+});
+
+const customersInflator = new Inflator({
+  data: data.customers,
+  container: "customers__container",
+  template: "customers-template",
+  populateItem: populateCustomersItem,
+});
+
+benefitsInflator.generateList();
+teamInflator.generateList();
+customersInflator.generateList();
 galleryCarousel.generateCarousel();
 productsCarousel.generateCarousel();
-addBenefits();
-addTeam();
-addCustomers();
