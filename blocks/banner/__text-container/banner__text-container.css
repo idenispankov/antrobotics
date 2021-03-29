@@ -1,0 +1,15 @@
+.banner__text-container {
+  width: 100%;
+  text-align: center;
+  margin: 250px 0 150px;
+  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .banner__text-container {
+    max-width: 330px;
+    margin: 140px 0 74px;
+  }
+}
+
+

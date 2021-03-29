@@ -1,0 +1,33 @@
+.banner__col2 {
+  margin: 190px 150px 160px 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner__col2 {
+    margin: 180px 140px 180px 35px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .banner__col2 {
+    margin: 228px 100px 228px 35px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner__col2 {
+    margin: 228px 70px 228px 35px;
+  }
+}
+
+@media screen and (max-width: 768) {
+  .banner__col2 {
+    margin: 228px 40px 228px 35px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner__col2 {
+    display: none;
+  }
+}

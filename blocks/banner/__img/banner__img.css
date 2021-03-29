@@ -1,5 +1,26 @@
 .banner__img {
-  position: relative;
-  left: -110px;
-  top: 10px;
+  position: absolute;
+  left: 38px;
+  top: -20px;
+}
+
+@media screen and (max-width: 520px) {
+  .banner__img {
+    left: 55px;
+    top: -24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .banner__img {
+    left: 40px;
+    top: -24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .banner__img {
+    left: 30px;
+    top: -24px;
+  }
 }

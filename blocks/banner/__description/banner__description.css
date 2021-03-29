@@ -1,3 +1,9 @@
 .banner__description {
-  margin: 16px 0 92px 0;
+  margin: 17px 0 92px 0;
+}
+
+@media screen and (max-width: 520px) {
+  .banner__description {
+    margin: 17px 0 60px 0;
+  }
 }

@@ -8,52 +8,51 @@
     <title>Ant Robotics</title>
   </head>
 
-  <body id="home" class="page">
-    <nav class="navbar">
-      <a class="navbar__logo" href="#home">ANT Robotics</a>
-      <ul class="navbar__list">
-        <li class="navbar__list-item">
-          <a class="navbar__list-link" href="#robots">Robots</a>
-        </li>
-        <li class="navbar__list-item">
-          <a class="navbar__list-link" href="#benefits">Benefits</a>
-        </li>
-        <li class="navbar__list-item">
-          <a class="navbar__list-link" href="#gallery">Gallery</a>
-        </li>
-        <li class="navbar__list-item">
-          <a class="navbar__list-link" href="#customers"
-            >Will it work for Me?</a
-          >
-        </li>
-        <li class="navbar__list-item">
-          <a class="navbar__list-link" href="#team">Team</a>
-        </li>
-        <li class="navbar__list-item">
-          <a class="navbar__list-link" href="#contact">Contact Us</a>
-        </li>
-      </ul>
-      <a
-        href="https://www.linkedin.com/company/antrobotics/"
-        target="_blanc"
-        class="navbar__social"
-        >in</a
-      >
-      <div class="menu-btn">
-        <div class="menu-btn__burger-before"></div>
-        <div class="menu-btn__burger-present"></div>
-        <div class="menu-btn__burger-after"></div>
-      </div>
-    </nav>
+  <body class="page">
+    <header>
+      <nav class="navbar">
+        <a class="navbar__logo" href="#home">ANT Robotics</a>
+        <ul class="navbar__list">
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#robots">Robots</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#customers"
+              >Will it work for Me?</a
+            >
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#team">Team</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <a
+          href="https://www.linkedin.com/company/antrobotics/"
+          target="_blanc"
+          class="navbar__social"
+          >in</a
+        >
+        <div class="menu-btn">
+          <div class="menu-btn__burger-before"></div>
+          <div class="menu-btn__burger-present"></div>
+          <div class="menu-btn__burger-after"></div>
+        </div>
+      </nav>
+    </header>
     <main class="main">
-      <section class="section section_theme_dark banner">
-        <img src="./images/banner_left.svg" alt="Banner: left image" />
-        <div class="banner__container">
-          <img
-            class="banner__img"
-            src="./images/banner_above_title.svg"
-            alt=""
-          />
+      <!-- Banner -->
+      <section id="home" class="section section_theme_dark banner">
+        <div class="banner__col1">
+        <img class="banner__left-img" src="./images/banner_left.svg" alt="Banner: left image"></div>
+        <div class="banner__text-container">
           <h1 class="content-title content-title_theme_light">ANT Robotics</h1>
           <p
             class="content-text content-text_theme_very-light banner__description"
@@ -61,14 +60,20 @@
             We simplify employment, team-up, and upgrade of transport robots in
             warehouses and factories.
           </p>
-          <button class="button button_type_large button_span_dark">
+          <button class="button button_type_large button_span_dark" id="watch-video">
             Watch video
           </button>
           <button class="button button_type_large button_span_bright">
             Learn more
           </button>
+          <img
+            class="banner__img"
+            src="./images/banner_above_title.svg"
+            alt=""
+          />
         </div>
-        <img src="./images/banner_right.svg" alt="Banner: right image" />
+        <div class="banner__col2">
+        <img class="banner__right-img" src="./images/banner_right.svg" alt="Banner: right image" /></div>
       </section>
       <!-- Products -->
       <section id="robots" class="section products">

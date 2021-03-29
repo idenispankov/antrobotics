@@ -1,11 +1,24 @@
-@import url("./__container/banner__container.css");
+@import url("./__text-container/banner__text-container.css");
 @import url("./__description/banner__description.css");
 @import url("./__img/banner__img.css");
+@import url("./__left-img/banner__left-img.css");
+@import url("./__right-img/banner__right-img.css");
+@import url('./__col1/banner__col1.css');
+@import url('./__col2/banner__col2.css');
 
 .banner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 330px 1fr;
+  padding: 0;
   justify-content: center;
   align-items: center;
-  padding: 140px 150px;
-  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .banner {
+    /* margin: 228px 58px 228px 40px; */
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+  }
 }
