@@ -100,43 +100,38 @@ document.addEventListener("click", closePopup);
 document.addEventListener("keyup", escClosePopup);
 
 // Carousels and Inflators
-const galleryCarousel = new Carousel({
+new Carousel({
   data: data.gallery,
   btnBackClass: "gallery__button-back",
   btnForwardClass: "gallery__button-forward",
   populateItem: populateGalleryItem,
-});
+}).generateCarousel();
 
-const productsCarousel = new Carousel({
+new Carousel({
   data: data.products,
   btnBackClass: "products__button-back",
   btnForwardClass: "products__button-forward",
   populateItem: populateProductsItem,
-});
+}).generateCarousel();
 
-const teamInflator = new Inflator({
+new Inflator({
   data: data.team,
   container: "team__container",
   template: "team-template",
   populateItem: populateTeamItem,
-});
+}).generateList();
 
-const benefitsInflator = new Inflator({
+new Inflator({
   data: data.benefits,
   container: "benefits__container",
   template: "benefits-template",
   populateItem: populateBenefitsItem,
-});
+}).generateList();
 
-const customersInflator = new Inflator({
+new Inflator({
   data: data.customers,
   container: "customers__container",
   template: "customers-template",
   populateItem: populateCustomersItem,
-});
+}).generateList();
 
-benefitsInflator.generateList();
-teamInflator.generateList();
-customersInflator.generateList();
-galleryCarousel.generateCarousel();
-productsCarousel.generateCarousel();
