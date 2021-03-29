@@ -1,24 +1,26 @@
 .contact__footer {
-  margin: 0;
-  font-size: 16px;
+  margin: 40px 0 0 0;
+  padding: 0;
   font-weight: 400;
-  color: #525252;
+  font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.04em;
-  font-weight: normal;
+  color: #525252;
+  position: absolute;
+  left: 100px;
+  bottom: 110px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .contact__footer {
-    position: absolute;
     left: 40px;
     bottom: 120px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .contact__footer {
-    bottom: 80px;
     left: 12px;
+    bottom: 80px;
   }
 }

@@ -1,0 +1,9 @@
+.contact__list-item {
+  margin-bottom: 12px;
+}
+
+.contact__list-item:last-child {
+  margin-bottom: 0;
+}
+
+

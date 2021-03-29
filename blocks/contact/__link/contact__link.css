@@ -1,3 +1,11 @@
 .contact__link {
   color: #000;
 }
+
+.contact__link_type_email {
+  text-decoration: none;
+}
+
+.contact__link_type_url {
+  text-decoration: underline;
+}

@@ -1,26 +1,25 @@
-@import url("./__container/contact__container.css");
-@import url("./__title/contact__title.css");
 @import url("./__list/contact__list.css");
 @import url("./__email/contact__list-email.css");
 @import url("./__footer/contact__footer.css");
 @import url("./__map/contact__map.css");
 @import url("./__link/contact__link.css");
+@import url("./__list-item/contact__list-item.css");
 
 .contact {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .contact {
     padding: 110px 40px 180px;
     flex-direction: column;
-    position: relative;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 520px) {
   .contact {
-    padding: 50px 12px 131px;
+    padding: 50px 12px 130px;
   }
 }
