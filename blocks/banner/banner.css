@@ -3,8 +3,8 @@
 @import url("./__img/banner__img.css");
 @import url("./__left-img/banner__left-img.css");
 @import url("./__right-img/banner__right-img.css");
-@import url('./__col1/banner__col1.css');
-@import url('./__col2/banner__col2.css');
+@import url("./__col1/banner__col1.css");
+@import url("./__col2/banner__col2.css");
 
 .banner {
   display: grid;

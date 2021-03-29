@@ -15,8 +15,14 @@
   opacity: 0.7;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 640px) {
   .navbar__social {
     margin-right: 20px;
   }
 }
+
+/* @media screen and (max-width: 320px) {
+  .navbar__social {
+    margin-right: 20px;
+  }
+} */

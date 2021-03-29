@@ -17,11 +17,12 @@ const navLinks = document.querySelectorAll(".navbar__list-link");
 const menuBtn = document.querySelector(".menu-btn");
 const menuBtnBurger = document.querySelectorAll(".menu-btn__burger");
 const menuBtnBurgerBefore = document.querySelector(".menu-btn__burger-before");
+const menuBtnBurgerAfter = document.querySelector(".menu-btn__burger-after");
 const menuBtnBurgerPresent = document.querySelector(
   ".menu-btn__burger-present"
 );
-const menuBtnBurgerAfter = document.querySelector(".menu-btn__burger-after");
 
+// Burger Menu Listeners
 let menuOpen = false;
 
 menuBtn.addEventListener("click", () => {
@@ -36,10 +37,15 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+// Controlling navList display
 const onresize = (e) => {
   let width = document.body.clientWidth;
-  if (width > 400) {
+  if (width > 640) {
     navList.style.display = "flex";
+  } else {
+    navList.style.display = "none";
+    menuOpen = false;
+    menuBtn.classList.remove("open");
   }
 };
 
@@ -76,6 +82,7 @@ const contactButton = document.querySelector(".work__button");
 
 function openPopup() {
   popup.classList.add("popup_state_open");
+  navBar.style.display = "none";
 }
 
 function closePopup(e) {
@@ -84,6 +91,7 @@ function closePopup(e) {
     e.target.classList.contains("popup")
   ) {
     popup.classList.remove("popup_state_open");
+    navBar.style.display = "flex";
   }
 }
 
@@ -132,4 +140,3 @@ new Inflator({
   template: "customers-template",
   populateItem: populateCustomersItem,
 }).generateList();
-
