@@ -1,7 +1,13 @@
 @import url("./__form/popup__form.css");
+@import url("./__form-title/popup__form-title.css");
+@import url("./__form-label/popup__form-label.css");
+@import url("./__form-input/popup__form-input.css");
+@import url("./__form-textarea/popup__form-textarea.css");
+@import url("./__form-sumbit/popup__form-submit.css");
+@import url("./__form-close/popup__form-close.css");
 
 .popup {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,18 +16,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
-  visibility: hidden;
-  opacity: 0;
   transition: visibility 0.3s, opacity 0.3s linear;
 }
 
-.popup-open {
-  visibility: visible;
-  opacity: 1;
+.popup_state_open {
+  display: flex;
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   .popup {
-    width: 320px;
+    width:
   }
-}
+} */

@@ -3,3 +3,9 @@
   margin-bottom: 22px;
 }
 
+@media screen and (max-width: 750px) {
+  .customers__item-title {
+    text-align: center;
+  }
+}
+
