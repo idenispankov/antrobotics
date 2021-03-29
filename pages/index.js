@@ -115,8 +115,8 @@ function addTeam() {
 // Gallery item
 function populateGalleryItem(item) {
   document.querySelector(
-    ".gallery__image-container"
-  ).style.background = `url(${item.image}) center/cover no-repeat`;
+    ".gallery__image"
+  ).src = item.image;
   document.querySelector(".gallery__slide-description").textContent =
     item.description;
 }

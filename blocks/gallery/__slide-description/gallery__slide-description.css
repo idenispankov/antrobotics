@@ -1,0 +1,6 @@
+@media screen and (max-width: 320px) {
+  .gallery__slide-description {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}

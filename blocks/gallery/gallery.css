@@ -1,6 +1,22 @@
-@import url("./__slide-container//gallery__slide-container.css");
-@import url("./__image-container/gallery__image-container.css");
+@import url("./__image/gallery__image.css");
+@import url("./__button-back/gallery__button-back.css");
+@import url("./__button-forward/gallery__button-forward.css");
+@import url("./__slide-description/gallery__slide-description.css");
+@import url("./__slide-container/gallery__slide-container.css");
+
 
 .gallery {
-  padding: 110px 218px 100px;
+  padding: 110px 110px 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery {
+    padding: 110px 44px 100px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .gallery {
+    padding: 50px 12px 92px;
+  }
 }

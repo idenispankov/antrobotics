@@ -1,0 +1,19 @@
+.gallery__button-forward {
+  position: absolute;
+  right: -82px;
+  top: 134px;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery__button-forward {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__button-forward {
+    right: 0;
+    top: auto;
+    bottom: -66px;
+  }
+}

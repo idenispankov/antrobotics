@@ -1,0 +1,19 @@
+.gallery__button-back {
+  position: absolute;
+  left: -82px;
+  top: 134px;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery__button-back {
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__button-back {
+    left: 0;
+    top: auto;
+    bottom: -66px;
+  }
+}

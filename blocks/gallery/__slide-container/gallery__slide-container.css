@@ -1,17 +1,21 @@
 .gallery__slide-container {
-  display: flex;
-  align-items: center;
+  position: relative;
   margin: 50px 0 14px;
+  width: 660px;
+  height: 320px;
 }
 
 @media screen and (max-width: 768px) {
   .gallery__slide-container {
-    width: 660px;
+    margin: 50px 0 26px;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 320px) {
   .gallery__slide-container {
-    width: 280px;
+    height: 160px;
+    margin: 40px 0 26px;
   }
 }
