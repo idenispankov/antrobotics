@@ -1,0 +1,17 @@
+.popup__form-close {
+  background: url(../../../../images/close-icon.svg) no-repeat center;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  border: none;
+  outline: none;
+}
+
+.popup__form-close:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
