@@ -1,6 +1,7 @@
 class Navbar {
   constructor({ navbarClass, bannerClass, menuBtnClass }) {
     this._banner = document.querySelector(`.${bannerClass}`);
+    this._menuBtn = document.querySelector(`.${menuBtnClass}`);
     this._burgerBefore = document
       .querySelector(`.${menuBtnClass}`)
       .querySelector(".menu-btn__burger-before");
@@ -31,8 +32,12 @@ class Navbar {
         item.classList.add("navbar__list-link_theme_light")
       );
     } else {
-      this._burgerBefore.classList.remove("menu-btn__burger-before_theme_light");
-      this._burgerPresent.classList.remove("menu-btn__burger-present_theme_light");
+      this._burgerBefore.classList.remove(
+        "menu-btn__burger-before_theme_light"
+      );
+      this._burgerPresent.classList.remove(
+        "menu-btn__burger-present_theme_light"
+      );
       this._burgerAfter.classList.remove("menu-btn__burger-after_theme_light");
       this._navbar.classList.remove("navbar_theme_light");
       this._navLogo.classList.remove("navbar__logo_theme_light");
@@ -44,8 +49,19 @@ class Navbar {
     }
   };
 
+  _toggleMenuBtn = () => {
+    if (this._menuBtn.classList.contains("open")) {
+      this._menuBtn.classList.remove("open");
+      this._navList.classList.remove("navbar__list_mode_open");
+    } else {
+      this._menuBtn.classList.add("open");
+      this._navList.classList.add("navbar__list_mode_open");
+    }
+  };
+
   _setEventListeners = () => {
     window.addEventListener("scroll", this._changeTheme);
+    this._menuBtn.addEventListener("click", this._toggleMenuBtn);
   };
 
   create = () => {

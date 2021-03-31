@@ -7,16 +7,21 @@
 
 @media screen and (max-width: 640px) {
   .navbar__list {
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 58px;
-    left: calc((100% - 280px)/2);
+    left: calc((100% - 280px) / 2);
     text-align: center;
     min-width: 240px;
     padding: 20px;
     background: #393939;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
     border-radius: 6px;
+  }
+
+  .navbar__list_mode_open {
+    display: flex;
   }
 }
 

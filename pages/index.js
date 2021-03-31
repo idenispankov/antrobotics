@@ -10,43 +10,7 @@ import {
   populateTeamItem,
 } from "../scripts/populate.js";
 
-
-const navList = document.querySelector(".navbar__list");
-
-const menuBtn = document.querySelector(".menu-btn");
-
-
-// Burger Menu Listeners
-let menuOpen = false;
-
-menuBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    menuBtn.classList.add("open");
-    menuOpen = true;
-    navList.style.display = "flex";
-  } else {
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-    navList.style.display = "none";
-  }
-});
-
-// Controlling navList display
-const onresize = (e) => {
-  let width = document.body.clientWidth;
-  if (width > 640) {
-    navList.style.display = "flex";
-  } else {
-    navList.style.display = "none";
-    menuOpen = false;
-    menuBtn.classList.remove("open");
-  }
-};
-
-window.addEventListener("resize", onresize);
-
 // Create Navbar
-
 new Navbar({
   navbarClass: "navbar",
   bannerClass: "banner",
