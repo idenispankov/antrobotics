@@ -13,17 +13,17 @@
 }
 
 .arrow-button_type_back {
-  background: #ffffff url('../../../../images/arrow_left.svg') no-repeat center;
+  background: #ffffff url('../../assets/images/arrow_left.svg') no-repeat center;
 }
 
 .arrow-button_type_back:disabled {
-  background: #ffffff url('../../../images/arrow_left_grey.svg') no-repeat center;
+  background: #ffffff url('../../assets/images/arrow_left_grey.svg') no-repeat center;
 }
 
 .arrow-button_type_forward {
-  background: #ffffff url('../../../../images/arrow_right.svg') no-repeat center;
+  background: #ffffff url('../../assets/images/arrow_right.svg') no-repeat center;
 }
 
 .arrow-button_type_forward:disabled {
-  background: #ffffff url('../../../../images/arrow_right_grey.svg') no-repeat center;
+  background: #ffffff url('../../assets/images/arrow_right_grey.svg') no-repeat center;
 }

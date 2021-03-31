@@ -6,6 +6,6 @@
 
 @media screen and (max-width: 320px) {
   .popup__form-textarea {
-    margin-bottom: 81px;
+    margin: 0 0 81px 0;
   }
 }

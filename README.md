@@ -1,5 +1,5 @@
 # ANT Robotics
-A landing page for [AntRobotics.tech](https://antrobotics.tech/)
+The landing page for [AntRobotics.tech](https://antrobotics.tech/)
 
 ## Technology Used
 * JavaScript (ES6)

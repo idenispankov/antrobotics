@@ -1,4 +1,5 @@
 import Carousel from "../scripts/Carousel.js";
+import Popup from "../scripts/Popup.js";
 import Inflator from "../scripts/Inflator.js";
 import {
   populateBenefitsItem,
@@ -76,34 +77,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Popup
-const popup = document.querySelector(".popup");
-const contactButton = document.querySelector(".work__button");
-
-function openPopup() {
-  popup.classList.add("popup_state_open");
-  navBar.style.display = "none";
-}
-
-function closePopup(e) {
-  if (
-    e.target.classList.contains("popup__form-close") ||
-    e.target.classList.contains("popup")
-  ) {
-    popup.classList.remove("popup_state_open");
-    navBar.style.display = "flex";
-  }
-}
-
-function closePopupEsc(e) {
-  if (e.key === "Escape") {
-    popup.classList.remove("popup_state_open");
-  }
-}
-
-contactButton.addEventListener("click", openPopup);
-document.addEventListener("click", closePopup);
-document.addEventListener("keyup", closePopupEsc);
+// Create popup
+new Popup({
+  popupClass: "popup",
+  popupOpenClass: "popup_state_open",
+  closeBtnClass: "popup__form-close",
+  openBtn: "work__button",
+  navBar: "navbar",
+}).create();
 
 // Create and inflate all sections
 new Carousel({
