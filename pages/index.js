@@ -10,19 +10,11 @@ import {
   populateTeamItem,
 } from "../scripts/populate.js";
 
-// Hamburger Menu
-const navBar = document.querySelector(".navbar");
-const navLogo = document.querySelector(".navbar__logo");
-const navSocial = document.querySelector(".navbar__social");
+
 const navList = document.querySelector(".navbar__list");
-const navLinks = document.querySelectorAll(".navbar__list-link");
+
 const menuBtn = document.querySelector(".menu-btn");
-// const menuBtnBurger = document.querySelectorAll(".menu-btn__burger");
-const menuBtnBurgerBefore = document.querySelector(".menu-btn__burger-before");
-const menuBtnBurgerAfter = document.querySelector(".menu-btn__burger-after");
-const menuBtnBurgerPresent = document.querySelector(
-  ".menu-btn__burger-present"
-);
+
 
 // Burger Menu Listeners
 let menuOpen = false;
@@ -53,32 +45,13 @@ const onresize = (e) => {
 
 window.addEventListener("resize", onresize);
 
-// Scroll style change
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > "400") {
-//     (navBar.style.background = "#efefef"), (navBar.style.color = "#000");
-//     navLogo.style.color = "#000";
-//     navSocial.style.color = "#000";
-//     menuBtnBurgerBefore.style.backgroundColor = "#000";
-//     menuBtnBurgerPresent.style.backgroundColor = "#000";
-//     menuBtnBurgerAfter.style.backgroundColor = "#000";
-//     navList.style.background = "#efefef";
-//     menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#000"));
-//     navLinks.forEach((link) => (link.style.color = "#000"));
-//   } else {
-//     (navBar.style.background = "#393939"), (navBar.style.color = "#fff");
-//     navLogo.style.color = "#fff";
-//     navSocial.style.color = "#fff";
-//     menuBtnBurgerBefore.style.backgroundColor = "#fff";
-//     menuBtnBurgerPresent.style.backgroundColor = "#fff";
-//     menuBtnBurgerAfter.style.backgroundColor = "#fff";
-//     navList.style.background = "#393939";
-//     menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#fff"));
-//     navLinks.forEach((link) => (link.style.color = "#fff"));
-//   }
-// });
+// Create Navbar
 
-new Navbar({ navbarClass: "navbar", bannerClass: "banner", menuBtnClass: "menu-btn" }).create();
+new Navbar({
+  navbarClass: "navbar",
+  bannerClass: "banner",
+  menuBtnClass: "menu-btn",
+}).create();
 
 // Create popup
 new Popup({

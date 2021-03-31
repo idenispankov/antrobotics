@@ -19,7 +19,6 @@
 .menu-btn__burger-before,
 .menu-btn__burger-after,
 .menu-btn__burger-present {
-  content: "";
   position: absolute;
   width: 16px;
   height: 2px;
@@ -43,7 +42,6 @@
 }
 
 /* Animation */
-
 .menu-btn.open .menu-btn__burger-before {
   transform: rotate(45deg);
 }

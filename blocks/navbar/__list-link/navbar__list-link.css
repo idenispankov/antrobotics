@@ -1,10 +1,10 @@
 .navbar__list-link {
-  text-decoration: none;
-  color: #fff;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
-  margin-right: 14px;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  color: #fff;
   transition: opacity 0.5s linear;
 }
 
@@ -14,10 +14,4 @@
 
 .navbar__list-link_theme_light {
   color: #000;
-}
-
-@media screen and (max-width: 320px) {
-  .navbar__list-link {
-    margin: 0;
-  }
 }
