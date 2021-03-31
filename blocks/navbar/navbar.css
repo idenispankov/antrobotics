@@ -21,6 +21,10 @@
   justify-content: space-between;
 }
 
+.navbar_theme_light {
+  background-color: #efefef;
+}
+
 @media screen and (max-width: 1279px) {
   .navbar {
     margin: 0 110px 0 100px;

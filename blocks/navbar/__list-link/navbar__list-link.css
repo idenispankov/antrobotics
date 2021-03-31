@@ -12,6 +12,10 @@
   opacity: 0.7;
 }
 
+.navbar__list-link_theme_light {
+  color: #000;
+}
+
 @media screen and (max-width: 320px) {
   .navbar__list-link {
     margin: 0;

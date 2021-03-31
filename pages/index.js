@@ -1,5 +1,6 @@
 import Carousel from "../scripts/Carousel.js";
 import Popup from "../scripts/Popup.js";
+import Navbar from "../scripts/Navbar.js";
 import Inflator from "../scripts/Inflator.js";
 import {
   populateBenefitsItem,
@@ -53,29 +54,31 @@ const onresize = (e) => {
 window.addEventListener("resize", onresize);
 
 // Scroll style change
-window.addEventListener("scroll", () => {
-  if (window.scrollY > "400") {
-    (navBar.style.background = "#efefef"), (navBar.style.color = "#000");
-    navLogo.style.color = "#000";
-    navSocial.style.color = "#000";
-    menuBtnBurgerBefore.style.backgroundColor = "#000";
-    menuBtnBurgerPresent.style.backgroundColor = "#000";
-    menuBtnBurgerAfter.style.backgroundColor = "#000";
-    navList.style.background = "#efefef";
-    menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#000"));
-    navLinks.forEach((link) => (link.style.color = "#000"));
-  } else {
-    (navBar.style.background = "#393939"), (navBar.style.color = "#fff");
-    navLogo.style.color = "#fff";
-    navSocial.style.color = "#fff";
-    menuBtnBurgerBefore.style.backgroundColor = "#fff";
-    menuBtnBurgerPresent.style.backgroundColor = "#fff";
-    menuBtnBurgerAfter.style.backgroundColor = "#fff";
-    navList.style.background = "#393939";
-    menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#fff"));
-    navLinks.forEach((link) => (link.style.color = "#fff"));
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > "400") {
+//     (navBar.style.background = "#efefef"), (navBar.style.color = "#000");
+//     navLogo.style.color = "#000";
+//     navSocial.style.color = "#000";
+//     menuBtnBurgerBefore.style.backgroundColor = "#000";
+//     menuBtnBurgerPresent.style.backgroundColor = "#000";
+//     menuBtnBurgerAfter.style.backgroundColor = "#000";
+//     navList.style.background = "#efefef";
+//     menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#000"));
+//     navLinks.forEach((link) => (link.style.color = "#000"));
+//   } else {
+//     (navBar.style.background = "#393939"), (navBar.style.color = "#fff");
+//     navLogo.style.color = "#fff";
+//     navSocial.style.color = "#fff";
+//     menuBtnBurgerBefore.style.backgroundColor = "#fff";
+//     menuBtnBurgerPresent.style.backgroundColor = "#fff";
+//     menuBtnBurgerAfter.style.backgroundColor = "#fff";
+//     navList.style.background = "#393939";
+//     menuBtnBurger.forEach((item) => (item.style.backgroundColor = "#fff"));
+//     navLinks.forEach((link) => (link.style.color = "#fff"));
+//   }
+// });
+
+new Navbar({ navbarClass: "navbar", bannerClass: "banner", menuBtnClass: "menu-btn" }).create();
 
 // Create popup
 new Popup({
