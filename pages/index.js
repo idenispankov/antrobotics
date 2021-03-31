@@ -10,7 +10,7 @@ import {
   populateTeamItem,
 } from "../scripts/populate.js";
 
-// Create Navbar
+// Create navbar
 new Navbar({
   navbarClass: "navbar",
   bannerClass: "banner",
