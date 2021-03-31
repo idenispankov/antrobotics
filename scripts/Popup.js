@@ -24,7 +24,6 @@ class Popup {
       e.target.classList.contains(this._closeBtnClass) ||
       e.target.classList.contains(this._popupClass)
     ) {
-      console.log(e.target);
       this._popup.classList.remove(this._popupOpenClass);
       this._navBar.style.display = "flex";
     }
