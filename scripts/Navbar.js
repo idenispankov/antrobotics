@@ -50,13 +50,8 @@ class Navbar {
   };
 
   _toggleMenuBtn = () => {
-    if (this._menuBtn.classList.contains("open")) {
-      this._menuBtn.classList.remove("open");
-      this._navList.classList.remove("navbar__list_mode_open");
-    } else {
-      this._menuBtn.classList.add("open");
-      this._navList.classList.add("navbar__list_mode_open");
-    }
+    this._menuBtn.classList.toggle("open");
+    this._navList.classList.toggle("navbar__list_mode_open");
   };
 
   _setEventListeners = () => {
