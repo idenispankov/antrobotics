@@ -83,7 +83,7 @@ new Popup({
   popupOpenClass: "popup_state_open",
   closeBtnClass: "popup__form-close",
   openBtn: "work__button",
-  navBar: "navbar",
+  navBarClass: "navbar",
 }).create();
 
 // Create and inflate all sections
